@@ -14,13 +14,18 @@
     {% assign active = true %}
 {% endif %}
 
+{% assign categories_array = "" | split:"|" %}
+
+{% for item in site.portfolio %}
+    {% assign categories_array = categories_array | push: item.category | uniq %}
+{% endfor %}
 
 {% if subnav %}
     <ul class="subnav">
-        {% for item in site.portfolio %}
-            <li class="subnav__link {% if page.category == item.category %}active{% endif %}">
-                <a href="/{{ item.categories }}/">
-                    {{ item.categories }}
+        {% for category in categories_array %}
+            <li class="subnav__link {% if page.category == category %}active{% endif %}">
+                <a href="/{{ category }}/">
+                    {{ category }}
                 </a>
             </li>
         {% endfor %}
@@ -36,10 +41,10 @@
        </div>
     </div>
     <ul class="subnav--mobile__list">
-        {% for item in site.portfolio %}
-            <li class="subnav--mobile__link {% if page.category == item.category %}active{% endif %}">
-                <a href="/{{ item.categories }}/">
-                    {{ item.categories }}
+        {% for category in categories_array %}
+            <li class="subnav--mobile__link {% if page.category == category %}active{% endif %}">
+                <a href="/{{ category }}/">
+                    {{ category }}
                 </a>
             </li>
         {% endfor %}
