@@ -48,6 +48,7 @@
         overflow: scroll;
         align-self: flex-end;
         order: 2;
+        max-width: 100%;
 
         @include tablet-break {
             order: 3;
