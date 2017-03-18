@@ -1,6 +1,6 @@
 ---
 layout: blog-post
-title:  "I hope this works"
+title:  "title"
 date:   2016-12-07 13:52:34 -0600
 tags: test
 thumbnail: /assets/images/site-assets/placeholder-thumb.jpg
