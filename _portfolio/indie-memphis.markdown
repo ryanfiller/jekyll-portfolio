@@ -1,17 +1,24 @@
 ---
 layout: portfolio-detail
-title:  Indie Memphis 2016
+title:  Indie Memphis Postcards
 category: illustration
 tags: illustration
-client-link: http://indiememphis.com/
-thumbnail: /assets/images/site-assets/placeholder-thumb.jpg
+client-link: indiememphis.com
+thumbnail: /assets/images/portfolio/indie-memphis/thumbnail-500x500.jpg
 slides:
-    - https://media.giphy.com/media/Gi7eBuLHjqCru/giphy.gif
-    - https://media.giphy.com/media/kcnvITNDYaaas/giphy.gif
-    - https://media.giphy.com/media/Gi7eBuLHjqCru/giphy.gif
-    - https://media.giphy.com/media/kcnvITNDYaaas/giphy.gif
+    - /assets/images/portfolio/indie-memphis/postcard-front-back-1.jpg
+    - /assets/images/portfolio/indie-memphis/postcard-front-back-2.jpg
 
 ---
 
+These were like, for RocketFuel? But we put them at Indie Memphis?
 postcard design,
 videos / gifs
+
+mood board
+
+<img class="center" src="/assets/images/portfolio/indie-memphis/mood-board.jpg" alt="project mood board">
+
+design as a set
+
+<img class="center" src="/assets/images/portfolio/indie-memphis/postcard-series.png" alt="card series">
