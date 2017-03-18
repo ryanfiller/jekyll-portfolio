@@ -4,14 +4,13 @@
     {% assign categories_array = categories_array | push: item.category | uniq %}
 {% endfor %}
 
-<div class="mobile-nav-wrap">
-    <ul class="mobile-nav" role="navigation">
-        {% assign navigation_pages = site.html_pages | sort: 'navigation_weight' %}
-        {% for p in navigation_pages %}
-            {% if p.navigation_weight %}
-                {% if p.url contains '/page' %}{% else %}
-                    <li class="mobile-nav__row {% if p.url == page.url %} active{% endif %}{% if p.url contains page.parent %}{% unless page.parent == "work" %} active{% endunless %}{% endif %}">
-                        <a href="{{ p.url }}">{{ p.title }}</a>
+<ul class="mobile-nav" role="navigation">
+    {% assign navigation_pages = site.html_pages | sort: 'navigation_weight' %}
+    {% for p in navigation_pages %}
+        {% if p.navigation_weight %}
+            {% if p.url contains '/page' %}{% else %}
+                <li class="mobile-nav__row {% if p.url == page.url %} active{% endif %}{% if p.url contains page.parent %}{% unless page.parent == "work" %} active{% endunless %}{% endif %}">
+                    <a href="{{ p.url }}">{{ p.title }}</a>
 
                     {% if p.title == 'Work' %}
 
