@@ -62,14 +62,14 @@
             width: 50%;
         }
 
-        img.center {
+        img.full {
             display: block;
             width: calc(100% + (2 * #{$spacing}));
             height: auto;
             margin: 0 -1*$spacing $spacing -1*$spacing;
         }
 
-        img.left, img.right, img.center {
+        img.left, img.right, img.full {
             @include phone-break {
                 width: calc(100% + (2 * #{$spacing}));
                 height: auto;

@@ -4,14 +4,22 @@ title:  Tech901 Collateral
 category: design
 tags: apparel collateral
 client-link: tech901.org
-thumbnail: /assets/images/site-assets/placeholder-thumb.jpg
+thumbnail: /assets/images/portfolio/tech-901/thumbnail-500x500.jpg
 slides:
-    - https://media.giphy.com/media/Gi7eBuLHjqCru/giphy.gif
-    - https://media.giphy.com/media/kcnvITNDYaaas/giphy.gif
-    - https://media.giphy.com/media/Gi7eBuLHjqCru/giphy.gif
-    - https://media.giphy.com/media/kcnvITNDYaaas/giphy.gif
+    - /assets/images/portfolio/tech-901/slider-tshirt.jpg
+    - /assets/images/portfolio/tech-901/slider-artwork.jpg
+    - /assets/images/portfolio/tech-901/slider-emails.png
 
 ---
 
-t-shirt design, email design
-explain about pattern creation, illustrator usage
+Tech901 is a nonprofit organization building the Memphis technology job base by training new tech workers to take on the diverse challenges of the IT industry and providing growth resources for local employers.
+
+![](/assets/images/portfolio/tech-901/shirt-sketch.jpg ){:class="full"}
+
+redrawing noun project icons to have a cohesive style, using line weight in illustrator.
+
+gif goes here?
+
+the pattern went on to be used in email templates
+
+![](/assets/images/portfolio/tech-901/pattern-stripes.jpg ){:class="full"}
