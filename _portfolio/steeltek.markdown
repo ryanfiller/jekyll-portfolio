@@ -4,6 +4,8 @@ title:  Steel-Tek
 category: design
 tags: webdesign development socialmedia
 client-link: steel-tek.com
+gif-thumbnail: /assets/images/portfolio/steel-tek/gif-thumb.jpg
+gif-video: /assets/images/portfolio/steel-tek/gif-video
 thumbnail: /assets/images/portfolio/steel-tek/thumbnail-500x500.jpg
 slides:
     - /assets/images/portfolio/steel-tek/slider-desktop.jpg
