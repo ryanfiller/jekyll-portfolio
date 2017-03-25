@@ -10,7 +10,7 @@ slides:
     - https://media.giphy.com/media/kcnvITNDYaaas/giphy.gif
     - https://media.giphy.com/media/Gi7eBuLHjqCru/giphy.gif
     - https://media.giphy.com/media/kcnvITNDYaaas/giphy.gif
-
+published: false
 ---
 
 blah blah blah
