@@ -1,9 +1,11 @@
 ---
 layout: portfolio-detail
 title:  test
-category: design
+category: ??
 tags: tag1 tag2
 client-link: www.google.com
+gif-thumbnail: /assets/images/portfolio/??/gif-thumb.jpg
+gif-video: /assets/images/portfolio/??/gif-video
 thumbnail: /assets/images/site-assets/placeholder-thumb.jpg
 slides:
     - https://media.giphy.com/media/Gi7eBuLHjqCru/giphy.gif

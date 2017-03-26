@@ -6,11 +6,8 @@ tags: apparel illustration
 client-link: hackmemphis.com
 thumbnail: /assets/images/portfolio/hack-memphis/hackmemphis2016shirt-thumb900x900.jpg
 slides:
-    - https://media.giphy.com/media/Gi7eBuLHjqCru/giphy.gif
-    - https://media.giphy.com/media/kcnvITNDYaaas/giphy.gif
-    - https://media.giphy.com/media/Gi7eBuLHjqCru/giphy.gif
-    - https://media.giphy.com/media/kcnvITNDYaaas/giphy.gif
-
+    - /assets/images/portfolio/hack-memphis/slider-shirt.jpg
+    - /assets/images/portfolio/hack-memphis/slider-design.jpg
 ---
 
 t-shirt design

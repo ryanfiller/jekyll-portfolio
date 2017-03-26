@@ -4,6 +4,8 @@ title:  Indie Memphis Postcards
 category: illustration
 tags: illustration
 client-link: indiememphis.com
+gif-thumbnail: /assets/images/portfolio/indie-memphis/gif-thumb.jpg
+gif-video: /assets/images/portfolio/indie-memphis/gif-video
 thumbnail: /assets/images/portfolio/indie-memphis/thumbnail-500x500.jpg
 slides:
     - /assets/images/portfolio/indie-memphis/postcard-front-back-1.jpg
