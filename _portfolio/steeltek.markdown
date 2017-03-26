@@ -7,11 +7,12 @@ client-link: steel-tek.com
 gif-thumbnail: /assets/images/portfolio/steel-tek/gif-thumb.jpg
 gif-video: /assets/images/portfolio/steel-tek/gif-video
 thumbnail: /assets/images/portfolio/steel-tek/thumbnail-500x500.jpg
+brand-color: 56c6d0
 slides:
-    - /assets/images/portfolio/steel-tek/slider-desktop.jpg
-    - /assets/images/portfolio/steel-tek/slider-tablet.jpg
-    - /assets/images/portfolio/steel-tek/slider-mobile.jpg
-    - /assets/images/portfolio/steel-tek/slider-social.jpg
+    - /assets/images/portfolio/steel-tek/slider-desktop.png
+    - /assets/images/portfolio/steel-tek/slider-tablet.png
+    - /assets/images/portfolio/steel-tek/slider-mobile.png
+    - /assets/images/portfolio/steel-tek/slider-social.png
 
 ---
 
