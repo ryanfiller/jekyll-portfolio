@@ -7,9 +7,11 @@ client-link: indiememphis.com
 gif-thumbnail: /assets/images/portfolio/indie-memphis/gif-thumb.jpg
 gif-video: /assets/images/portfolio/indie-memphis/gif-video
 thumbnail: /assets/images/portfolio/indie-memphis/thumbnail-500x500.jpg
+brand-color: ed1c24
 slides:
-    - /assets/images/portfolio/indie-memphis/postcard-front-back-1.jpg
-    - /assets/images/portfolio/indie-memphis/postcard-front-back-2.jpg
+    - /assets/images/portfolio/indie-memphis/slider-front.png
+    - /assets/images/portfolio/indie-memphis/slider-front-back.png
+    - /assets/images/portfolio/indie-memphis/slider-series.png
 
 ---
 
@@ -19,8 +21,10 @@ videos / gifs
 
 mood board
 
-<img class="center" src="/assets/images/portfolio/indie-memphis/mood-board.jpg" alt="project mood board">
+![](/assets/images/portfolio/indie-memphis/mood-board.jpg){:class="full"}
 
 design as a set
 
-<img class="center" src="/assets/images/portfolio/indie-memphis/postcard-series.png" alt="card series">
+<div class="videoWrapper">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/sIlNIVXpIns" frameborder="0" allowfullscreen></iframe>
+</div>
