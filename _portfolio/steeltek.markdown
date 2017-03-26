@@ -6,7 +6,7 @@ tags: webdesign development socialmedia
 client-link: steel-tek.com
 gif-thumbnail: /assets/images/portfolio/steel-tek/gif-thumb.jpg
 gif-video: /assets/images/portfolio/steel-tek/gif-video
-thumbnail: /assets/images/portfolio/steel-tek/thumbnail-500x500.jpg
+thumbnail: /assets/images/portfolio/steel-tek/thumbnail-500x500-2.jpg
 brand-color: 56c6d0
 slides:
     - /assets/images/portfolio/steel-tek/slider-desktop.png
