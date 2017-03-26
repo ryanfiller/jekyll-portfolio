@@ -5,8 +5,9 @@ category: design
 tags: apparel collateral
 client-link: tech901.org
 thumbnail: /assets/images/portfolio/tech-901/thumbnail-500x500.jpg
+brand-color: 82be42
 slides:
-    - /assets/images/portfolio/tech-901/slider-tshirt.jpg
+    - /assets/images/portfolio/tech-901/slider-tshirt.png
     - /assets/images/portfolio/tech-901/slider-artwork.jpg
     - /assets/images/portfolio/tech-901/slider-emails.png
 
