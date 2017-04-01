@@ -1,8 +1,8 @@
 ---
 layout: portfolio-list-category
-title: Illustration
-permalink: /illustration/
-category: illustration
+title: Draw
+permalink: /draw/
+category: draw
 parent: work
 ---
 
