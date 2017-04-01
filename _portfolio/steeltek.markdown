@@ -1,7 +1,7 @@
 ---
 layout: portfolio-detail
 title:  Steel-Tek
-category: design dev
+category: design
 tags: webdesign development socialmedia
 client-link: steel-tek.com
 gif-thumbnail: /assets/images/portfolio/steel-tek/gif-thumb.jpg

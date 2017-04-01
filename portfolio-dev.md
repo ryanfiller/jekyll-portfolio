@@ -1,7 +1,7 @@
 ---
 layout: portfolio-list-category
-title: Dev
-permalink: /development/
+title: Development
+permalink: /dev/
 category: dev
 parent: work
 ---
