@@ -23,27 +23,25 @@
     }
 
     .portfolio-grid {
-        @include grid;
-        padding: $spacing/2;
+        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
 
         .project__block-link {
             box-sizing: border-box;
-            padding: $spacing/2;
             display: block;
             width: 33.333%;
-            height: calc(33.33333vw - #{$spacing/3});
+            height: 33.33333vw;
 
             @include tablet-break {
                 width: 50%;
-                height: calc(50vw - #{$spacing/2});
+                height: 50vw;
             }
 
             @include phone-break {
                 width: 100%;
-                height: calc(100vw - #{$spacing});
+                height: 100vw;
             }
 
             .portfolio-grid-block {

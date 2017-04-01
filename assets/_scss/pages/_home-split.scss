@@ -1,0 +1,27 @@
+.site.home-split {
+
+    .header {
+
+        .header--main {
+            display: none;
+        }
+
+        @include tablet-break {
+            .header--main {
+
+                position: absolute;
+                width: 100%;
+
+                .navicon--wrap{
+                    .navicon, .navicon::before, .navicon::after {
+                        background: $secondary-color;
+                    }
+
+                    &.open .navicon {
+                        background: none;
+                    }
+                }
+            }
+        }
+    }
+}
