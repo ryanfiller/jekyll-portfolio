@@ -1,7 +1,7 @@
 ---
 layout: portfolio-detail
 title:  Hack Memphis 2016
-category: illustration
+category: draw
 tags: apparel illustration
 client-link: hackmemphis.com
 thumbnail: /assets/images/portfolio/hack-memphis/thumbnail-500x500-2.jpg

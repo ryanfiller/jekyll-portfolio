@@ -1,7 +1,7 @@
 ---
 layout: portfolio-detail
 title:  Indie Memphis Postcards
-category: illustration
+category: draw
 tags: illustration
 client-link: indiememphis.com
 gif-thumbnail: /assets/images/portfolio/indie-memphis/gif-thumb.jpg
