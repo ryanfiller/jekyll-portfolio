@@ -11,7 +11,8 @@
         {% include components/banner-glitch.html %}
 
         <main class="page-content {{ page.layout }}">
-            <!-- <p>{{ page.content }}</p> -->
+			
+            {% include components/subnav.html %}
 
             <div class="portfolio-grid">
                 {% for work in site.portfolio %}

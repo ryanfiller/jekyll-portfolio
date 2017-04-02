@@ -13,7 +13,7 @@ $navicon-size: 50px;
 
     .navicon {
         display: block;
-        background: $primary-color;
+        background: $white;
         width: $navicon-size;
         height: $navicon-size/10;
         position: relative;
@@ -25,7 +25,7 @@ $navicon-size: 50px;
             width: 100%;
             height: 5px;
             display: block;
-            background: $primary-color;
+            background: $white;
             position: absolute;
         }
 

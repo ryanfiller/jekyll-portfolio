@@ -32,7 +32,7 @@ social:
     - https://plus.google.com/u/0/112417000136872017947
     - https://github.com/ryanfiller89
 
-pfolio-layout: gifs
+# pfolio-layout: gifs
 
 # Build settings
 markdown: kramdown
