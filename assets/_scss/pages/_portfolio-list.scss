@@ -1,6 +1,6 @@
 @mixin grid-page-active {
     &::before {
-        @include pixels;    
+        @include pixels;
     }
 
     .portfolio-grid-block__info {
@@ -33,8 +33,8 @@
         .project__block-link {
             box-sizing: border-box;
             display: block;
-            width: 33.333%;
-            height: 33.33333vw;
+            width: 50%;
+            height: 50vw;
 
             @include tablet-break {
                 width: 50%;
