@@ -1,5 +1,5 @@
 .footer {
-        background: $primary-color;
+        background: $dark-gray;
 
     .footer--pre {
         background: $gray;
@@ -20,7 +20,7 @@
 
             @include tablet-break {
                 display: block;
-                background: $dark-gray;
+                background: $gray;
 
                 .nav__link {
                     border-bottom: 1px solid $primary-color;
@@ -41,7 +41,7 @@
                     padding-bottom: .5em;
 
                     &:hover {
-                        background: $dark-gray;
+                        background: $primary-color;
                     }
                 }
             }
@@ -155,7 +155,7 @@
                 .social {
 
                     svg {
-                        max-height: 67px;    
+                        max-height: 67px;
                     }
 
                     &::after {
@@ -170,7 +170,7 @@
     }
 
     .footer--post {
-        background: $dark-gray;
+        background: $black;
         color: $white;
         padding-top: .5em;
         padding-bottom: .5em;

@@ -5,9 +5,6 @@
     padding-top: 2*$spacing;
     padding-bottom: 2*$spacing;
 
-    @include image-overlay;
-    box-shadow: $shadow-inset;
-
     @include tablet-break {
         padding-top: 3*$spacing;
         padding-bottom: 3*$spacing;
@@ -31,11 +28,20 @@
         text-align: center;
         font-size: 6em;
         letter-spacing: .025em;
-        color: $white;
+        color: $black;
         text-shadow: $shadow;
 
         @include tablet-break {
             font-size: 3.5em;
+        }
+    }
+
+    &--blog {
+        @include image-overlay;
+        box-shadow: $shadow-inset;
+
+        .banner__header {
+            color: $white;
         }
     }
 }

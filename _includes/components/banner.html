@@ -1,3 +1,3 @@
-<div class="banner" style="background-image: url('{{ page.image }}');">
+<div class="banner{% if page.layout == 'blog-post' %} banner--blog" style="background-image: url('{{ page.image }}');{% endif %}">
     <h1 class="banner__header">{{ page.title }}</h1>
 </div>
