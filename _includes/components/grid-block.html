@@ -1,9 +1,22 @@
 <article class="project__block-link">
-    <a href="{{ work.url }}" class="portfolio-grid-block" style="background-image:url({{ work.thumbnail }});">
+    <a href="{{ work.url }}" class="portfolio-grid-block"
+        {% if site.pfolio-layout == "gifs" %}
+            style="background-image:url({{ work.gif-thumbnail }});"
+        {% else %}
+            style="background-image:url({{ work.thumbnail }});">
+        {% endif %} >
+
         <div class="portfolio-grid-block__info" >
             <h2 class="excerpt__title">{{work.title}}</h2>
             {% include components/meta.html %}
             <span class="excerpt__link">Read More</span>
         </div>
+        {% if site.pfolio-layout == "gifs" %}
+            <video loop="loop" class="video">
+                <source src="{{ work.gif-video }}.mp4" type="video/mp4">
+                <!-- <source src="mov_bbb.ogg" type="video/ogg"> -->
+                Your browser does not support HTML5 video.
+            </video>
+        {% endif %}
     </a>
 </article>
