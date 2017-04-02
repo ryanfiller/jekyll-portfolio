@@ -1,5 +1,5 @@
 .header {
-    background: $gray;
+    background: $primary-color;
 
     .header--pre {
         background: $dark-gray;
@@ -89,7 +89,7 @@
                         color: $secondary-color;
                     }
                     &:hover a {
-                        color: $primary-color;
+                        color: $black;
                     }
                 }
         }

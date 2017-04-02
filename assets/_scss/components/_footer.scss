@@ -1,5 +1,5 @@
 .footer {
-        background: $dark-gray;
+        background: $primary-color;
 
     .footer--pre {
         background: $gray;
@@ -17,6 +17,7 @@
             margin: 0;
             display: flex;
             width: 100%;
+            @include grid--container;
 
             @include tablet-break {
                 display: block;
@@ -41,7 +42,7 @@
                     padding-bottom: .5em;
 
                     &:hover {
-                        background: $primary-color;
+                        background: $black;
                     }
                 }
             }
