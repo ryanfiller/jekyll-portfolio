@@ -170,7 +170,7 @@ svg, svg path {
         content:attr(data-text);
         position:absolute;
         left:-1px;
-        text-shadow:1px 0 rgba(0, 255, 255, 0.25);
+        // text-shadow:2px 0 rgba(0, 255, 255, 0.25);
         top:0;
         color:$black;
         background:$white;
@@ -183,7 +183,7 @@ svg, svg path {
         content:attr(data-text);
         position:absolute;
         left:1px;
-        text-shadow:-1px 0 rgba(255, 0, 0, 0.25);
+        // text-shadow:-2px 0 rgba(255, 0, 0, 0.25);
         top:0;
         color:$black;
         background:$white;

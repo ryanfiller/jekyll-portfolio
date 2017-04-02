@@ -1,5 +1,5 @@
 @mixin grid-page-active {
-    @include image-overlay;
+    @include pixels;
 
     .portfolio-grid-block__info {
         max-height: 100%;
@@ -11,7 +11,7 @@
     }
 }
 
-.page-content.portfolio-list, .page-content.portfolio-list-category {
+.page-content.portfolio-list, .page-content.portfolio-list-filtered {
     width: 100%;
     max-width: 100%;
     margin: 0;
@@ -33,6 +33,7 @@
             display: block;
             width: 33.333%;
             height: 33.33333vw;
+            @include image-overlay;
 
             @include tablet-break {
                 width: 50%;
@@ -79,6 +80,7 @@
 
                 &:hover {
                     @include grid-page-active;
+                    @include pixels;
                 }
 
                 .excerpt__title {
@@ -104,25 +106,17 @@
                     color: $white;
                     font-size: 1.125em;
 
+                    &::after{
+                        content: ' ▸▸';
+                        display: inline-block;
+                        position: relative;
+                    }
+
                     &:hover {
                         color: $white;
                     }
                 }
             }
-        }
-    }
-}
-
-.site {
-    .portfolio-list {
-        .meta__tag {
-            display: none;
-        }
-    }
-
-    .portfolio-list-category {
-        .meta__category {
-            display: none;
         }
     }
 }

@@ -16,15 +16,9 @@
 			{% include components/subnav.html %}
 
             <div class="portfolio-grid">
-				{% if site.pfolio-layout == "gifs" %}
-					{% for work in site.portfolio %}
-						{% include components/grid-block-gif.html %}
-					{% endfor %}
-				{% else %}
-					{% for work in site.portfolio %}
-						{% include components/grid-block.html %}
-					{% endfor %}
-				{% endif %}
+				{% for work in site.portfolio %}
+                    {% include components/grid-block.html %}
+                {% endfor %}
             </div>
         </main>
 

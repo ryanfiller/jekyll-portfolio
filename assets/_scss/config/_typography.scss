@@ -209,5 +209,13 @@ blockquote {
         @include text-link;
         @include nav-font;
         margin: $spacing/2;
+
+        &::before{
+            content: ' ▸▸';
+            display: inline-block;
+            position: relative;
+            top: .125em;
+            transform: rotate(180deg);
+        }
     }
 }
