@@ -3,7 +3,8 @@
 	<div class="swiper-wrapper">
 		<!-- Slides -->
 			{% for image in page.slides %}
-				<section class="swiper-slide" style="background-image: url('{{ image }}')">
+				<section class="swiper-slide">
+					<img src="{{ image }}">
 				</section>
 			{% endfor %}
 	</div>
@@ -18,3 +19,5 @@
 		</div>
 	{% endif %}
 </section>
+
+<!-- style="background-image: url('{{ image }}')" -->
