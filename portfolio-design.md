@@ -1,8 +1,8 @@
 ---
-layout: portfolio-list-category
+layout: portfolio-list-filtered
 title: Design
 permalink: /design/
-category: design
+filter: design
 parent: work
 ---
 

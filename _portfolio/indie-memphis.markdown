@@ -2,7 +2,7 @@
 layout: portfolio-detail
 title:  Indie Memphis Postcards
 category: draw
-tags: illustration
+tags: draw
 client-link: indiememphis.com
 gif-thumbnail: /assets/images/portfolio/indie-memphis/gif-thumb.jpg
 gif-video: /assets/images/portfolio/indie-memphis/gif-video

@@ -1,8 +1,8 @@
 ---
-layout: portfolio-list-category
+layout: portfolio-list-filtered
 title: Development
 permalink: /dev/
-category: dev
+filter: dev
 parent: work
 ---
 

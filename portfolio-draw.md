@@ -1,8 +1,8 @@
 ---
-layout: portfolio-list-category
+layout: portfolio-list-filtered
 title: Draw
 permalink: /draw/
-category: draw
+filter: draw
 parent: work
 ---
 
