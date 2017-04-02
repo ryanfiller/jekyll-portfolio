@@ -1,8 +1,9 @@
 ---
 layout: portfolio-detail
 title:  Jack Morris Auto Glass
-category: design
-tags: design, dev
+tags:
+    - design
+    - dev
 # client-link: rocketfuel.com?
 thumbnail: /assets/images/site-assets/placeholder-thumb.jpg
 slides:

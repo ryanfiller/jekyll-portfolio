@@ -1,8 +1,9 @@
 ---
 layout: portfolio-detail
 title:  Tech901 Collateral
-category: design
-tags: design, draw
+tags:
+    - design
+    - draw
 client-link: tech901.org
 thumbnail: /assets/images/portfolio/tech-901/thumbnail-500x500-2.jpg
 brand-color: 82be42

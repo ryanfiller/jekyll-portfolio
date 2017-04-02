@@ -1,8 +1,4 @@
-{% assign categories_array = "" | split:"|" %}
-
-{% for item in site.portfolio %}
-    {% assign categories_array = categories_array | push: item.category | uniq %}
-{% endfor %}
+{% assign tags =  site.portfolio | map: 'tags' | join: ','  | split: ',' | uniq %}
 
 <ul class="mobile-nav" role="navigation">
     {% assign navigation_pages = site.html_pages | sort: 'navigation_weight' %}
@@ -19,9 +15,9 @@
                         </div>
 
                         <ul class="mobile-subnav js-mobile-subnav">
-                          {% for category in categories_array %}
-                              <li class="mobile-nav__row {% if page.category == category %}active js-sub-active{% endif %}">
-                                  <a href="/{{ category }}/">{{ category }}</a>
+                          {% for tag in tags %}
+                              <li class="mobile-nav__row {% if page.filter == tag %}active js-sub-active{% endif %}">
+                                  <a href="/{{ tag }}/">{{ tag }}</a>
                               </li>
                           {% endfor %}
                         </ul>

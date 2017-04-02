@@ -1,8 +1,8 @@
 ---
 layout: portfolio-detail
 title:  RocketFuel Template Sites
-category: dev
-tags: dev
+tags:
+    - dev
 # client-link: rocketfuel.com?
 thumbnail: /assets/images/site-assets/placeholder-thumb.jpg
 slides:

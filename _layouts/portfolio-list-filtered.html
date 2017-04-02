@@ -15,7 +15,7 @@
 
             <div class="portfolio-grid">
                 {% for work in site.portfolio %}
-                    {% if page.category == work.category %}
+                    {% if work.tags contains page.filter %}
                         {% include components/grid-block.html %}
                     {% endif %}
                 {% endfor %}

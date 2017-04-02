@@ -1,8 +1,9 @@
 ---
 layout: portfolio-detail
 title:  Hack Memphis 2016
-category: draw
-tags: design, dev
+tags:
+    - design
+    - dev
 client-link: hackmemphis.com
 thumbnail: /assets/images/portfolio/hack-memphis/thumbnail-500x500-2.jpg
 brand-color: E86724

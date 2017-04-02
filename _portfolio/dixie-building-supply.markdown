@@ -1,8 +1,9 @@
 ---
 layout: portfolio-detail
 title:  Dixie Building Supply
-category: design
-tags: design, dev
+tags:
+    - design
+    - dev
 # client-link: rocketfuel.com?
 thumbnail: /assets/images/site-assets/placeholder-thumb.jpg
 slides:
