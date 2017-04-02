@@ -128,15 +128,15 @@
         }
     }
 
-    @include large-break {
-        height: 100vh;
-
-        &+ .portfolio-detail  {
-            background: $white;
-            z-index: 4;
-            margin-top: -0;
-        }
-    }
+    // @include desktop-break {
+    //     height: 100vh;
+    //
+    //     &+ .portfolio-detail  {
+    //         background: $white;
+    //         z-index: 4;
+    //         margin-top: -0;
+    //     }
+    // }
 
     .swiper-wrapper {
         height: 100%;

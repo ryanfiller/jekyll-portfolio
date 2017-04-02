@@ -36,6 +36,11 @@
             width: 50%;
             height: 50vw;
 
+            @include desktop-break {
+                width: 33.33333%;
+                height: 33.33333vw;
+            }
+
             @include tablet-break {
                 width: 50%;
                 height: 50vw;

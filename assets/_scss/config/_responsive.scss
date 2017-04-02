@@ -1,9 +1,8 @@
-$large: 1200px;
-$small: 950px;
+$large: 1000px;
 $tablet: 768px;
 $phone: 480px;
 
-@mixin large-break () {
+@mixin desktop-break () {
 	@media only screen and (min-width: $large) {
 		@content;
 	}
