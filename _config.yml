@@ -56,12 +56,12 @@ defaults:
         scope:
             type: "portfolio"
         values:
-            parent: work
+            parent: portfolio
 
 collections:
     portfolio:
         output: true
-        permalink: /:categories/:title/
+        permalink: /portfolio/:title/
 
 sass:
     sass_dir: /assets/_scss
