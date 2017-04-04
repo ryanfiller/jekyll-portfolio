@@ -5,53 +5,58 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-    .header {
-        width: 100%;
-        order: 1;
-    }
 
-    .footer {
-        width: 100%;
-        order: 10;
-
-        &:first-of-type {
-            box-shadow: 0 -50px 50px 15px $white;
-            position: relative;
-            z-index: 5;
-        }
-    }
-
-    .banner--swiper {
-        width: 50%;
-        height: 50vw;
-        order: 3;
-        overflow: hidden;
-        position: relative;
-        z-index: 10;
-
-        @include tablet-break {
+    @include desktop-break {
+        .header {
             width: 100%;
-            order: 2;
-            height: 100vw;
+            order: 1;
         }
 
-        &::after {
-            display: none;
+        .footer {
+            width: 100%;
+            order: 10;
+
+            &:first-of-type {
+                box-shadow: 0 -50px 50px 15px $white;
+                position: relative;
+                z-index: 5;
+            }
+        }
+
+        .banner--swiper {
+            width: 50%;
+            height: 50vw;
+            order: 3;
+            overflow: hidden;
+            position: relative;
+            z-index: 10;
+
+            @include tablet-break {
+                width: 100%;
+                order: 2;
+                height: 100vw;
+            }
+
+            &::after {
+                display: none;
+            }
         }
     }
 
 
     .page-content.portfolio-detail {
-        margin: 0;
-        width: 50%;
-        height: 50vw;
-        overflow: scroll;
-        align-self: flex-end;
-        order: 2;
-        max-width: 100%;
+        @include desktop-break {
+            margin: 0;
+            width: 50%;
+            height: 50vw;
+            overflow: scroll;
+            align-self: flex-end;
+            order: 2;
+            max-width: 100%;
+        }
 
         @include tablet-break {
-            order: 3;
+            // order: 3;
             width: 100%;
             height: auto;
         }
