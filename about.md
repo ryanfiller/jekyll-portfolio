@@ -7,11 +7,7 @@ banner: /assets/images/site-assets/placeholder.png
 ---
 
 <p>
-This is the base Jekyll theme.  You can find out more info <a href="#">Really really long link.</a> about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+I'm a graphic designer turned web developer living and working in Memphis, Tennessee.
 
-You can find the source code for the Jekyll new theme at:
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at
-[jekyll](https://github.com/jekyll/jekyll)
+Outside of working I enjoy watching old movies, reading books and comics, amateur wood working, being terrible at video games, replica prop construction, and keeping tropical fish.
 </p>
