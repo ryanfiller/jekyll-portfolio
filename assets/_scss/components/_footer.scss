@@ -48,12 +48,13 @@
     }
 
     .footer--main {
-        @include grid--container;
+        @include grid;
         padding-top: 2*$spacing;
         padding-bottom: 2*$spacing;
 
         @include tablet-break {
             max-width: 80vw;
+            margin: 0 auto;
         }
 
         @include phone-break {
@@ -73,14 +74,41 @@
             }
 
             &.footer__branding {
-                flex: 1;
+                flex: 2;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+
+                .nav {
+                    list-style: none;
+                    padding: 0;
+                    padding-top: 1.5em;
+                    display: flex;
+
+                    .nav__link {
+                        flex: 1;
+
+                        a {
+                            @include nav-font;
+                            font-size: 1.5em;
+                            color: $white;
+                            text-align: center;
+                            display: block;
+
+                            &:hover {
+                                color: $secondary-color;
+                            }
+                        }
+                    }
+                }
             }
 
             &.footer__contact {
-                flex: 2;
+                flex: 3;
+            }
+
+            &.footer__socials {
+                flex: 1;
             }
         }
 
@@ -148,7 +176,7 @@
             }
 
             li {
-                flex: 0 1 25%;
+                flex: 0 1 50%;
 
 
                 .social {
