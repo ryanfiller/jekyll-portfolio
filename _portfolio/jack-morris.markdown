@@ -4,7 +4,11 @@ title:  Jack Morris Auto Glass
 tags:
     - design
     - dev
-# client-link: rocketfuel.com?
+client-link: morrisautoglass.com
+gif-thumbnail: /assets/images/portfolio/jack-morris/gif-thumb.jpg
+gif-video: /assets/images/portfolio/jack-morris/gif-video
+thumbnail: /assets/images/portfolio/jack-morris/thumbnail-500x500.jpg
+brand-color: ffcc00
 thumbnail: /assets/images/site-assets/placeholder-thumb.jpg
 slides:
     - https://media.giphy.com/media/Gi7eBuLHjqCru/giphy.gif
