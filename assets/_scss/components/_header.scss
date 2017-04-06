@@ -1,8 +1,12 @@
 .header {
-    background: $primary-color;
+    background: $white;
+
+    &:last-of-type {
+        border-bottom: $spacing/4 solid $primary-color;
+    }
 
     .header--pre {
-        background: $dark-gray;
+        background: $black;
 
         .socials {
             justify-content: flex-end;
@@ -45,7 +49,7 @@
             svg {
 
                 path.logo {
-                    fill: $white;
+                    fill: $black;
                 }
 
                 text.tagline {
@@ -82,14 +86,18 @@
                         margin-left: .75em;
                         @include nav-font;
                         font-size: 1.5em;
-                        color: $white;
+                        color: $black;
+
+                            &:hover {
+                                color: $light-gray;
+                            }
                         }
 
                     &.active a {
                         color: $secondary-color;
                     }
                     &:hover a {
-                        color: $black;
+                        color: $primary-color;
                     }
                 }
         }

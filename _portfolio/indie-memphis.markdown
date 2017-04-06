@@ -7,7 +7,7 @@ client-link: indiememphis.com
 gif-thumbnail: /assets/images/portfolio/indie-memphis/gif-thumb.jpg
 gif-video: /assets/images/portfolio/indie-memphis/gif-video
 thumbnail: /assets/images/portfolio/indie-memphis/thumbnail-500x500.jpg
-brand-color: 0e3757
+brand-color: EE1C25
 slides:
     - /assets/images/portfolio/indie-memphis/slider-front.png
     - /assets/images/portfolio/indie-memphis/slider-front-back.png
