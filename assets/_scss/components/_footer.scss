@@ -1,5 +1,5 @@
 .footer {
-        background: $primary-color;
+        background: $dark-gray;
 
     .footer--pre {
         background: $gray;
@@ -41,7 +41,7 @@
                     padding-bottom: .5em;
 
                     &:hover {
-                        background: $dark-gray;
+                        background: $primary-color;
                     }
                 }
             }
@@ -170,7 +170,7 @@
     }
 
     .footer--post {
-        background: $dark-gray;
+        background: $black;
         color: $white;
         padding-top: .5em;
         padding-bottom: .5em;

@@ -68,7 +68,7 @@ iframe.contact-container {
                 &:focus {
                     // background-color: lighten($secondary-color, 20%);
                     outline: none;
-                    border: 2px solid $secondary-color;
+                    border: 2px solid $primary-color;
                 }
         }
 
@@ -77,7 +77,7 @@ iframe.contact-container {
         }
 
         .button {
-            @include button--secondary;
+            @include button--primary;
             border: 0;
             border-radius: 0;
             -webkit-appearance: none;

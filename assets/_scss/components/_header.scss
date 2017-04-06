@@ -1,9 +1,5 @@
 .header {
-    background: $white;
-
-    &:last-of-type {
-        border-bottom: $spacing/4 solid $primary-color;
-    }
+    background: $dark-gray;
 
     .header--pre {
         background: $black;
@@ -49,7 +45,7 @@
             svg {
 
                 path.logo {
-                    fill: $black;
+                    fill: $white;
                 }
 
                 text.tagline {
@@ -86,11 +82,7 @@
                         margin-left: .75em;
                         @include nav-font;
                         font-size: 1.5em;
-                        color: $black;
-
-                            &:hover {
-                                color: $light-gray;
-                            }
+                        color: $white;
                         }
 
                     &.active a {
