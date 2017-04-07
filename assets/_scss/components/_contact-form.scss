@@ -4,15 +4,30 @@ iframe.contact-container {
     border: 0;
     height: $formheight;
     width: 100%;
+    margin-top: 2*$spacing;
+    margin-bottom: 2*$spacing;
 }
 
 .contact__header {
+    width: 100%;
+    background-color: $black;
     @include header-font;
    color: $white;
-   @include line-right;
    font-size: 1.75em;
-   margin-bottom: $spacing/2;
+   text-align: center;
    text-transform: uppercase;
+   padding: $spacing/2;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   &::after {
+        content: '';
+        display: block;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-right: 15px solid $white;
+   }
 }
 
 .contact {
@@ -77,7 +92,7 @@ iframe.contact-container {
         }
 
         .button {
-            @include button--primary;
+            @include button--secondary;
             border: 0;
             border-radius: 0;
             -webkit-appearance: none;
