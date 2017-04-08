@@ -7,16 +7,28 @@ permalink: /contact/
 <div class="contact">
     <form id="contact-form">
         <div class="contact__row">
-            <input class="contact__row--half" type="text" name="name" placeholder="Name *" required>
-            <input class="contact__row--half" type="email" name="_replyto" placeholder="Email *" required>
+            <div class="contact__row--half">
+                <input type="text" name="name" placeholder="Name *" required>
+                <label for="name">Name</label>
+            </div>
+            <div class="contact__row--half">
+                <input type="email" name="_replyto" placeholder="Email *" required>
+                <label for="email">Email</label>
+            </div>
         </div>
         <div class="contact__row">
-            <input class="contact__row--full" type="text" name="_subject" placeholder="Subject *" required>
+            <div class="contact__row--full">
+                <input type="text" name="_subject" placeholder="Subject *" required>
+                <label for="subject">Subject</label>
+            </div>
         </div>
         <div class="contact__row contact__row--flex">
-            <textarea class="contact__row--full" type="text" name="_message" required
-                placeholder="Message..."
-            ></textarea>
+            <div class="contact__row--full">
+                <textarea type="text" name="_message" required
+                    placeholder="Message..."
+                ></textarea>
+                <label for="message">Message</label>
+            </div>
         </div>
         <div class="contact__row">
             <input type="text" name="_gotcha" style="display:none" />
@@ -29,13 +41,8 @@ permalink: /contact/
         <a onClick="window.location.reload()">Send Another?</a>
     </div>
     <div style="display:none;" class="contact__message contact__message--error">
-        Oops, something was missing.
-        <a onclick="goBack()">Go Back?</a>
-        <script>
-            function goBack() {
-                window.history.back();
-            }
-        </script>
+        Oops, something wasn't quite right.
+        <a onclick="window.location.reload()">Go Back?</a>
     </div>
 </div>
 
