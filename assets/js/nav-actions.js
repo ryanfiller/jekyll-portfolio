@@ -36,3 +36,16 @@
     button.on('click', onButtonClick)
 
 })(window.jQuery);
+
+
+// this is the generic one that should work with siblings in one wrappper
+(function expander($) {
+    var button = $('.js-expander');
+
+    function dropdownExpand () {
+        $(this).toggleClass('open')
+    }
+
+    button.on('click', dropdownExpand)
+
+})(window.jQuery);

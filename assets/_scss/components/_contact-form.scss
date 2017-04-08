@@ -8,26 +8,39 @@ iframe.contact-container {
     margin-bottom: 2*$spacing;
 }
 
+.js-expander {
+    &::after {
+        margin-left: 1rem;
+        content: '';
+        display: block;
+        border-top: .5rem solid transparent;
+        border-bottom: .5rem solid transparent;
+        border-right: .75rem solid $white;
+        transition: $transition;
+    }
+    &.open {
+        &::after {
+            transform: rotate(-90deg);
+        }
+
+        + .js-expandee {
+            max-height: 1000px;
+        }
+    }
+}
+
 .contact__header {
     width: 100%;
     background-color: $black;
     @include header-font;
    color: $white;
-   font-size: 1.75em;
+   font-size: 1.25em;
    text-align: center;
    text-transform: uppercase;
    padding: $spacing/2;
    display: flex;
    justify-content: center;
    align-items: center;
-
-   &::after {
-        content: '';
-        display: block;
-        border-top: 10px solid transparent;
-        border-bottom: 10px solid transparent;
-        border-right: 15px solid $white;
-   }
 }
 
 .contact {
