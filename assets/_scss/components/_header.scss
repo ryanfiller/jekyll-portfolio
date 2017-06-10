@@ -1,92 +1,57 @@
 .header {
     background: $black;
+    display: flex;
+    justify-content: space-between;
+    padding: $spacing/2 $spacing;
 
-    .header--pre {
-        background: $black;
+    &__logo {
+        height: auto;
+        width: 3rem;
 
-        .socials {
-            justify-content: flex-end;
-            padding-right: 0;
-
-            @include phone-break {
-                padding: 0;
-                height: 10px;
-            }
-
-            li {
-                .social {
-                    width: 25px;
-                    height: 25px;
-                }
-
-                @include tablet-break {
-                    display: none;
-                }
-            }
+        @include phone-break {
+            width: 160px;
         }
-    }
 
-    .header--main {
-        @include grid;
-        justify-content: space-between;
-        padding-top: $spacing/2;
-        padding-bottom: $spacing/2;
-
-        .header__logo {
-            height: auto;
-            width: 220px;
-            margin-top: 10px;
-            max-height:70px;
-
-            @include phone-break {
-                width: 160px;
+        svg {
+            path {
+                fill: $white;
             }
 
-            svg {
+            &:hover {
                 path {
-                    fill: $white;
-                }
-
-                &:hover {
-                    path {
-                        fill: $secondary-color;
-                    }
+                    fill: $secondary-color;
                 }
             }
-        }
-
-        .nav {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-
-            @include tablet-break {
-                display: none;
-            }
-
-                .nav__link {
-                    a {
-                        text-decoration: none;
-                        margin-left: .75em;
-                        @include nav-font;
-                        font-size: 1.5em;
-                        color: $white;
-                        }
-
-                    &.active a {
-                        color: $secondary-color;
-                    }
-                    &:hover a {
-                        color: $primary-color;
-                    }
-                }
         }
     }
 
-    .header--post {
-        background: $gray;
+    .nav {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        @include tablet-break {
+            display: none;
+        }
+
+            &__link {
+                a {
+                    text-decoration: none;
+                    margin-left: .75em;
+                    @include nav-font;
+                    font-size: 1.5em;
+                    color: $white;
+                    }
+
+                &.active a {
+                    color: $secondary-color;
+                }
+                &:hover a {
+                    color: $primary-color;
+                }
+            }
     }
 }
