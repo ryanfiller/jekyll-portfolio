@@ -3,7 +3,7 @@ layout: portfolio-list-filtered
 title: Draw
 permalink: /draw/
 filter: draw
-parent: work
+parent: portfolio
 ---
 
 illustratio portfolio page
