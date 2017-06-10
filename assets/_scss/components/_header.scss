@@ -1,5 +1,5 @@
 .header {
-    background: $dark-gray;
+    background: $black;
 
     .header--pre {
         background: $black;
@@ -43,17 +43,8 @@
             }
 
             svg {
-
-                path.logo {
+                path {
                     fill: $white;
-                }
-
-                text.tagline {
-                    display: none;
-                }
-
-                path.initials {
-                    display: none;
                 }
 
                 &:hover {

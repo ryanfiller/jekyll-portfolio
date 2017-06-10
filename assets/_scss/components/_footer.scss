@@ -166,18 +166,41 @@
     }
 
     .footer--post {
+        @include grid--container;
         background: $black;
         color: $white;
         padding-top: .5em;
         padding-bottom: .5em;
         width: 100%;
+        display: flex;
+        justify-content: space-between;
 
         .footer__legal {
-            @include grid--container;
-            justify-content: center;
-            text-align: center;
+            flex: 1;
             @include header-font;
             font-size: .9em;
+        }
+
+        .socials {
+            flex: 1;
+            justify-content: flex-end;
+            padding-right: 0;
+
+            @include phone-break {
+                padding: 0;
+                height: 10px;
+            }
+
+            li {
+                .social {
+                    width: 25px;
+                    height: 25px;
+                }
+
+                @include tablet-break {
+                    display: none;
+                }
+            }
         }
     }
 }
