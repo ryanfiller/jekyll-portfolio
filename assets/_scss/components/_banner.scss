@@ -20,7 +20,7 @@
         position: relative;
         z-index: 5;
         text-shadow: $shadow;
-        @include grid--container;
+        @include container;
         justify-content: center;
         @include header-font;
         font-weight: 300;

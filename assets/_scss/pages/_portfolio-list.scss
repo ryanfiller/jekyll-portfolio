@@ -21,7 +21,7 @@
 
     p {
         width: 100%;
-        @include grid--container;
+        @include container;
     }
 
     .portfolio-grid {

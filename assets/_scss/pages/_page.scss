@@ -8,7 +8,7 @@
     background: $white;
     padding-top: (2*$spacing);
     padding-bottom: (4*$spacing);
-    @include grid--container;
+    @include container;
     display: block;
 
     h1, h2, h3, h4, h5, h6 {

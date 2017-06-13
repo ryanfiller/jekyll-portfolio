@@ -26,7 +26,7 @@ body {
 $container-width: 75rem;
 $spacing: 2rem;
 
-@mixin container() {
+@mixin container {
     max-width: $container-width;
     margin-left: auto;
     margin-right: auto;
@@ -46,6 +46,6 @@ $spacing: 2rem;
 }
 
 @mixin grid--container() {
-    @include grid;
+
     @include container;
 }
