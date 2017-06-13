@@ -38,14 +38,7 @@ $spacing: 2rem;
     }
 }
 
-@mixin grid() {
-    display: flex;
-    padding-left: $spacing;
-    padding-right: $spacing;
-    max-width: 100%;
-}
-
-@mixin grid--container() {
-
+@mixin container-wide {
     @include container;
+    max-width: 100%;
 }
