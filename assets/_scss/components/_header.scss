@@ -1,4 +1,5 @@
 .header {
+    padding: 1rem;
     @include container-wide;
     background: $black;
     display: flex;
@@ -41,16 +42,21 @@
                 a {
                     text-decoration: none;
                     margin-left: .75em;
-                    @include font-sans-serif;
+                    @include font-condensed;
+                    text-transform: uppercase;
                     font-size: 1.5em;
                     color: $white;
                     }
+                &:hover a {
+                    @include glitch($white, $black);
+                }
 
                 &.active a {
                     color: $secondary-color;
                 }
-                &:hover a {
-                    color: $primary-color;
+
+                &.active:hover a {
+                    @include glitch($secondary-color, $black);
                 }
             }
     }

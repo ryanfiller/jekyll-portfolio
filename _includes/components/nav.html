@@ -4,8 +4,7 @@
         {% if p.navigation_weight %}
             {% if p.url contains '/page' %}{% else %}
                 <li class="nav__link {% if p.url == page.url %}active{% endif %}{% if p.url contains page.parent %} active{% endif %}">
-                    <a href="{{ p.url }}">
-                        {{  }}
+                    <a href="{{ p.url }}" data-text="{{ p.title }}">
                         {{ p.title }}
                     </a>
                 </li>
