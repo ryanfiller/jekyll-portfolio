@@ -36,7 +36,7 @@ iframe.contact-container {
 .contact__header {
     width: 100%;
     background-color: $black;
-    @include header-font;
+    @include font-condensed;
    color: $white;
    font-size: 1.25em;
    text-align: center;
@@ -122,7 +122,7 @@ iframe.contact-container {
 
         input, textarea {
             font-size: .75em;
-            @include body-font;
+            @include font-sans-serif;
             padding: $spacing/4;
             border: 2px solid transparent;
             border-radius: 0;

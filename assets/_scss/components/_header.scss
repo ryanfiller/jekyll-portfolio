@@ -1,8 +1,8 @@
 .header {
+    @include container-wide;
     background: $black;
     display: flex;
     justify-content: space-between;
-    padding: $spacing/2 $spacing;
 
     &__logo {
         height: auto;
@@ -41,7 +41,7 @@
                 a {
                     text-decoration: none;
                     margin-left: .75em;
-                    @include nav-font;
+                    @include font-sans-serif;
                     font-size: 1.5em;
                     color: $white;
                     }

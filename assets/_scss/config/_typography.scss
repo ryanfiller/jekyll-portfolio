@@ -1,21 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i");
 @import url("https://fonts.googleapis.com/css?family=Dosis:300,400,500,700");
 
-@mixin body-font() {
+@mixin font-sans-serif() {
     font-family: 'Raleway', sans-serif;
     font-weight: normal;
 }
 
-@mixin header-font() {
+@mixin font-condensed() {
     font-family: 'Dosis', sans-serif;
     font-weight: 400;
-}
-
-@mixin nav-font() {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 300;
-    text-transform: uppercase;
-    text-decoration: none;
 }
 
 @mixin text-link {
@@ -69,7 +62,7 @@
 }
 
 body {
-    @include body-font;
+    @include font-sans-serif;
     font-size: 18px;
 }
 
@@ -93,7 +86,7 @@ a {
 }
 
 h2 {
-    @include header-font;
+    @include font-condensed;
     color: $primary-color;
     font-size: 3.5em;
 
@@ -107,7 +100,7 @@ h2 {
 }
 
 h3 {
-    @include header-font;
+    @include font-condensed;
     color: $light-gray;
     font-size: 2.5em;
 
@@ -121,7 +114,7 @@ h3 {
 }
 
 h4 {
-    @include body-font;
+    @include font-sans-serif;
     color: $gray;
     font-weight: bold;
     font-size: 1.5em;
@@ -151,7 +144,7 @@ blockquote {
 
         &::before {
             content: '"';
-            @include header-font;
+            @include font-condensed;
             color: $primary-color;
             font-size: 3em;
             position: absolute;
@@ -207,7 +200,7 @@ blockquote {
 
     a {
         @include text-link;
-        @include nav-font;
+        @include font-sans-serif;
         margin: $spacing/2;
 
         &::before{

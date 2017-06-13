@@ -137,7 +137,7 @@ body {
 
             a {
                 color: $white;
-                @include nav-font;
+                @include font-sans-serif;
                 font-size: 1.25em;
                 padding: .75*$spacing 0 .75*$spacing $spacing;
                 display: flex;

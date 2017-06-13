@@ -27,7 +27,7 @@
         display: none;
         justify-content: space-between;
         align-items: center;
-        @include header-font;
+        @include font-condensed;
         font-size: 1.25em;
         padding-left: $spacing;
 
@@ -120,7 +120,7 @@
             width: 100%;
             padding-top: .5em;
             padding-bottom: .5em;
-            @include nav-font;
+            @include font-sans-serif;
             text-decoration: none;
             background-color: $gray;
         }

@@ -83,7 +83,7 @@
 
             .portfolio__h1 {
                 margin: 0;
-                @include header-font;
+                @include font-condensed;
                 font-size: 4em;
                 text-align: center;
                 text-transform: uppercase;

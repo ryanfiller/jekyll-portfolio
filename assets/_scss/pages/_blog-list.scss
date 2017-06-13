@@ -44,7 +44,7 @@
 
             .meta {
                 margin-bottom: ($spacing/4);
-                @include body-font;
+                @include font-sans-serif;
                 font-size: .8em;
                 font-weight: bold;
 
@@ -54,7 +54,7 @@
             }
 
             .excerpt__title {
-                @include header-font;
+                @include font-condensed;
                 text-decoration: none;
                 font-size: 2em;
                 color: $white;
@@ -81,7 +81,7 @@
             .excerpt__link {
                 text-decoration: none;
                 @include text-link;
-                @include nav-font;
+                @include font-sans-serif;
                 font-size: 1.5em;
 
                 @include tablet-break {
@@ -127,7 +127,7 @@
         padding: $spacing/2;
 
         .blog-pagination__current {
-            @include header-font;
+            @include font-condensed;
             color: $primary-color;
             font-size: 1em;
             line-height: 1.125em;
@@ -186,7 +186,7 @@
 
         .blog-pagination__prev, .blog-pagination__next {
             width: 50%;
-            @include nav-font;
+            @include font-sans-serif;
             color: $primary-color;
             font-size: 1em;
             padding: $spacing/4 0;

@@ -1,7 +1,7 @@
 .recent-posts {
 
      .recent-posts__header {
-         @include header-font;
+         @include font-condensed;
         color: $white;
         @include line-right;
         font-size: 1.75em;
@@ -37,7 +37,7 @@
 
                 .recent-post__title {
                     margin-top: 0;
-                    @include header-font;
+                    @include font-condensed;
                     font-size: 1.5em;
                     color: $dark-gray;
                     margin-bottom: $spacing/4;
@@ -45,7 +45,7 @@
 
                 .recent-post__link {
                     @include text-link;
-                    @include nav-font;
+                    @include font-sans-serif;
                     color: $dark-gray;
 
                     &::after {

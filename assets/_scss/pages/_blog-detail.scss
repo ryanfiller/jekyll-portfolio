@@ -37,7 +37,7 @@
             color: $white;
             background-color: $primary-color;
             padding: .33em;
-            @include header-font;
+            @include font-condensed;
             float: left;
             font-size: 4em;
             margin: -.25em .25em 0 0;

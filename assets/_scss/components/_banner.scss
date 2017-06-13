@@ -22,7 +22,7 @@
         text-shadow: $shadow;
         @include container;
         justify-content: center;
-        @include header-font;
+        @include font-condensed;
         font-weight: 300;
         text-transform: uppercase;
         text-align: center;

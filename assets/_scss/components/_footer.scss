@@ -177,7 +177,7 @@
 
         .footer__legal {
             flex: 1;
-            @include header-font;
+            @include font-condensed;
             font-size: .9em;
         }
 
