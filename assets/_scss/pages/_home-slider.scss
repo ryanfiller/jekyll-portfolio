@@ -14,7 +14,7 @@
 
                 .navicon--wrap{
                     .navicon, .navicon::before, .navicon::after {
-                        background: $secondary-color;
+                        background: $color-orange;
                     }
 
                     &.open .navicon {
@@ -87,11 +87,11 @@
                     z-index: 4;
 
                     path.logo, tspan {
-                        fill: $secondary-color;
+                        fill: $color-orange;
                     }
 
                     tspan {
-                        fill: $white;
+                        fill: $color-white;
                     }
                 }
 
@@ -119,7 +119,7 @@
                     &:nth-child(2) {
 
                         path.logo, tspan {
-                            fill: $white;
+                            fill: $color-white;
                         }
                     }
 
@@ -143,7 +143,7 @@
 
                     path.initials {
                         display: block;
-                        fill: $white;
+                        fill: $color-white;
                     }
                 }
             }
@@ -164,10 +164,10 @@
                 height: $spacing/2;
                 width: $spacing/2;
                 border-radius: $spacing/4;
-                background-color: $secondary-color;
+                background-color: $color-orange;
 
                 &-active {
-                    background-color: $primary-color;
+                    background-color: $color-blue;
                 }
             }
         }

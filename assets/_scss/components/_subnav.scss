@@ -8,8 +8,8 @@
     padding: 0;
     margin-bottom: $spacing;
     position: relative;
-    background: $gray;
-    color: $white;
+    background: $color-gray;
+    color: $color-white;
 
     @include tablet-break {
         width: 50%;
@@ -49,7 +49,7 @@
                 height: 0;
                 border-top: 10px solid transparent;
                 border-bottom: 10px solid transparent;
-                border-right: 15px solid $white;
+                border-right: 15px solid $color-white;
                 transition: $transition;
             }
         }
@@ -78,14 +78,14 @@
         }
 
         .subnav__link {
-            background: $black;
+            background: $color-black;
             flex: 1;
             list-style: none;
 
             a {
                 display: block;
                 padding: $spacing/2 $spacing;
-                color: $white;
+                color: $color-white;
 
                 @include tablet-break {
                     padding: $spacing;
@@ -93,7 +93,7 @@
             }
 
             &.active {
-                background: $primary-color;
+                background: $color-blue;
             }
         }
     }
@@ -113,7 +113,7 @@
 
 
         a {
-            color: $white;
+            color: $color-white;
             font-size: 1.25em;
             text-align: center;
             display: block;
@@ -122,15 +122,15 @@
             padding-bottom: .5em;
             @include font-sans-serif;
             text-decoration: none;
-            background-color: $gray;
+            background-color: $color-gray;
         }
 
         &:hover a {
-            background: $black;
+            background: $color-black;
         }
 
         &.active a {
-            background: $primary-color;
+            background: $color-blue;
         }
     }
 }

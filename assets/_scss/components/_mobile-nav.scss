@@ -13,7 +13,7 @@ $navicon-size: 50px;
 
     .navicon {
         display: block;
-        background: $white;
+        background: $color-white;
         width: $navicon-size;
         height: $navicon-size/10;
         position: relative;
@@ -25,7 +25,7 @@ $navicon-size: 50px;
             width: 100%;
             height: 5px;
             display: block;
-            background: $white;
+            background: $color-white;
             position: absolute;
         }
 
@@ -46,14 +46,14 @@ $navicon-size: 50px;
                 top: 0;
                 transform: rotate(45deg);
                 transition: transform 2*$transition;
-                background: $secondary-color;
+                background: $color-orange;
             }
 
             &::after {
                 bottom: 0;
                 transform: rotate(-45deg);
                 transition: transform 2*$transition;
-                background: $secondary-color;
+                background: $color-orange;
             }
         }
     }
@@ -98,13 +98,13 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    background: transparentize($black, .5);
+    background: transparentize($color-black, .5);
     z-index: 40;
     display: none;
 }
 
 .mobile-tray {
-    background: $primary-color;
+    background: $color-blue;
     position: absolute;
     left: 100%;
     top: 0;
@@ -122,7 +122,7 @@ body {
         .mobile-nav__row {
             width: 100%;
             min-height: 1.25*$navicon-size;
-            border-bottom: 2px solid transparentize($white, .75);
+            border-bottom: 2px solid transparentize($color-white, .75);
             position: relative;
             display: flex;
             justify-content: space-between;
@@ -131,12 +131,12 @@ body {
 
             &.active {
                 > a {
-                    color: $secondary-color;
+                    color: $color-orange;
                 }
             }
 
             a {
-                color: $white;
+                color: $color-white;
                 @include font-sans-serif;
                 font-size: 1.25em;
                 padding: .75*$spacing 0 .75*$spacing $spacing;
@@ -156,21 +156,21 @@ body {
                 align-items: center;
 
                 &.open {
-                    background: $gray;
+                    background: $color-gray;
                     .mobile-nav__selector {
                         transform: rotate(135deg);
                     }
                 }
 
                 .mobile-nav__selector {
-                    background: $white;
+                    background: $color-white;
                     width: 50%;
                     height: 3px;
 
                     &::after {
                         content: '';
                         display: block;
-                        background: $white;
+                        background: $color-white;
                         width: 100%;
                         height: 100%;
                         transform: rotate(90deg);
@@ -184,7 +184,7 @@ body {
                 display: flex;
                 flex-wrap: wrap;
                 align-items: center;
-                background: $gray;
+                background: $color-gray;
                 max-height: 0;
                 overflow: hidden;
 
@@ -193,7 +193,7 @@ body {
                 }
 
                 .mobile-nav__row {
-                    border-bottom: 2px solid transparentize($white, .75);
+                    border-bottom: 2px solid transparentize($color-white, .75);
 
                     &:last-child {
                         border-bottom: none;

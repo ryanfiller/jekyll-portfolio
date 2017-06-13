@@ -1,8 +1,8 @@
 .footer {
-        background: $dark-gray;
+        background: $color-dark-gray;
 
     .footer--pre {
-        background: $primary-color;
+        background: $color-blue;
 
         .footer__contact {
             @include container;
@@ -57,11 +57,11 @@
                         width: 100%;
 
                         path {
-                            fill: $white;
+                            fill: $color-white;
                         }
 
                         path.logo {
-                            fill: $white;
+                            fill: $color-white;
                         }
 
                         text.tagline {
@@ -74,7 +74,7 @@
 
                         &:hover {
                             path {
-                                fill: $secondary-color;
+                                fill: $color-orange;
                             }
                         }
 
@@ -102,10 +102,10 @@
                         text-align: left;
 
                         a {
-                            color: $white;
+                            color: $color-white;
 
                             &:hover {
-                                color: $secondary-color;
+                                color: $color-orange;
                             }
                         }
 
@@ -167,8 +167,8 @@
 
     .footer--post {
         @include container;
-        background: $black;
-        color: $white;
+        background: $color-black;
+        color: $color-white;
         padding-top: .5em;
         padding-bottom: .5em;
         width: 100%;

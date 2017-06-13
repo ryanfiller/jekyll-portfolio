@@ -7,38 +7,38 @@
 
 @mixin button--primary {
     @include button;
-    background-color: $primary-color;
+    background-color: $color-blue;
     font-size: 1.5em;
-    color: $white;
+    color: $color-white;
 
     &:hover {
-        background-color: darken($primary-color, 5%);
-        color: $white;
+        background-color: darken($color-blue, 5%);
+        color: $color-white;
     }
 }
 
 @mixin button--secondary {
     @include button;
-    background-color: $secondary-color;
+    background-color: $color-orange;
     @include text-link;
     font-size: 1.125em;
-    color: $white;
+    color: $color-white;
 
     &:hover {
-        background-color: darken($secondary-color, 5%);
-        color: $white;
+        background-color: darken($color-orange, 5%);
+        color: $color-white;
     }
 }
 
 @mixin button--gray {
     @include button;
-    background-color: $gray;
+    background-color: $color-gray;
     @include text-link;
     font-size: 1.125em;
-    color: $white;
+    color: $color-white;
 
     &:hover {
-        background-color: $dark-gray;
-        color: $white;
+        background-color: $color-dark-gray;
+        color: $color-white;
     }
 }

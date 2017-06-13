@@ -19,7 +19,7 @@ iframe.contact-container {
         display: block;
         border-top: .5rem solid transparent;
         border-bottom: .5rem solid transparent;
-        border-right: .75rem solid $white;
+        border-right: .75rem solid $color-white;
         transition: $transition;
     }
     &.open {
@@ -35,9 +35,9 @@ iframe.contact-container {
 
 .contact__header {
     width: 100%;
-    background-color: $black;
+    background-color: $color-black;
     @include font-condensed;
-   color: $white;
+   color: $color-white;
    font-size: 1.25em;
    text-align: center;
    text-transform: uppercase;
@@ -133,7 +133,7 @@ iframe.contact-container {
 
                 &:focus {
                     outline: none;
-                    border: 2px solid $gray;
+                    border: 2px solid $color-gray;
                     margin: 0;
 
                     &::-webkit-input-placeholder {
@@ -156,9 +156,9 @@ iframe.contact-container {
 
         label {
             max-height: 0;
-            color: $white;
+            color: $color-white;
             font-weight: bold;
-            background-color: $gray;
+            background-color: $color-gray;
             overflow: hidden;
             font-size: .6em;
             padding-left: 0.5rem;
@@ -183,7 +183,7 @@ iframe.contact-container {
     }
 
     .contact__message {
-        color: $white;
+        color: $color-white;
         text-align: center;
         width: 100%;
         font-size: 1.5em;
@@ -191,11 +191,11 @@ iframe.contact-container {
         a {
             display: block;
             cursor: pointer;
-            color: $secondary-color;
+            color: $color-orange;
             margin-top: $spacing;
 
              &:hover {
-                 color: $white;
+                 color: $color-white;
              }
         }
     }

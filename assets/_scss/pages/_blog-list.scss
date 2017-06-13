@@ -49,7 +49,7 @@
                 font-weight: bold;
 
                 span {
-                    color: $white;
+                    color: $color-white;
                 }
             }
 
@@ -57,7 +57,7 @@
                 @include font-condensed;
                 text-decoration: none;
                 font-size: 2em;
-                color: $white;
+                color: $color-white;
                 margin-bottom: 0;
             }
         }
@@ -71,7 +71,7 @@
 
             .excerpt__text {
                 margin-bottom: ($spacing/2);
-                color: $primary-color;
+                color: $color-blue;
 
                 @include tablet-break {
                      padding: 0 $spacing
@@ -102,20 +102,20 @@
 
             .excerpt__header {
                 &::before {
-                    background-color: $secondary-color;
+                    background-color: $color-orange;
                 }
 
                 .excerpt__title {
-                    color: $white;
+                    color: $color-white;
                 }
             }
 
             .excerpt__body .excerpt__text {
-                color: $primary-color;
+                color: $color-blue;
             }
 
             .excerpt__link {
-                color: $secondary-color;
+                color: $color-orange;
             }
         }
     }
@@ -128,21 +128,21 @@
 
         .blog-pagination__current {
             @include font-condensed;
-            color: $primary-color;
+            color: $color-blue;
             font-size: 1em;
             line-height: 1.125em;
             line-height: 0;
             padding: 0 $spacing/2;
             margin: 0 $spacing/2;
-            border-left: 2px solid $primary-color;
-            border-right: 2px solid $primary-color;
+            border-left: 2px solid $color-blue;
+            border-right: 2px solid $color-blue;
             display: flex;
             align-items: center;
 
             @include tablet-break {
                 border: none;
-                background-color: $primary-color;
-                color: $white;
+                background-color: $color-blue;
+                color: $color-white;
                 font-size: 1.5em;
                 margin: 0;
             }
@@ -187,7 +187,7 @@
         .blog-pagination__prev, .blog-pagination__next {
             width: 50%;
             @include font-sans-serif;
-            color: $primary-color;
+            color: $color-blue;
             font-size: 1em;
             padding: $spacing/4 0;
 

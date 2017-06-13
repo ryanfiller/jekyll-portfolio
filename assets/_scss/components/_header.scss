@@ -1,7 +1,7 @@
 .header {
     padding: 1rem;
     @include container-wide;
-    background: $black;
+    background: $color-black;
     display: flex;
     justify-content: space-between;
 
@@ -15,12 +15,12 @@
 
         svg {
             path {
-                fill: $white;
+                fill: $color-white;
             }
 
             &:hover {
                 path {
-                    fill: $secondary-color;
+                    fill: $color-orange;
                 }
             }
         }
@@ -45,18 +45,18 @@
                     @include font-condensed;
                     text-transform: uppercase;
                     font-size: 1.5em;
-                    color: $white;
+                    color: $color-white;
                     }
                 &:hover a {
-                    @include glitch($white, $black);
+                    @include glitch($color-white, $color-black);
                 }
 
                 &.active a {
-                    color: $secondary-color;
+                    color: $color-orange;
                 }
 
                 &.active:hover a {
-                    @include glitch($secondary-color, $black);
+                    @include glitch($color-orange, $color-black);
                 }
             }
     }

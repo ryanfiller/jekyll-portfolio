@@ -14,7 +14,7 @@
 
                 .navicon--wrap{
                     .navicon, .navicon::before, .navicon::after {
-                        background: $secondary-color;
+                        background: $color-orange;
                     }
 
                     &.open .navicon {

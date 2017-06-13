@@ -12,11 +12,11 @@
 }
 
 @mixin text-link {
-    color: $primary-color;
+    color: $color-blue;
     text-decoration: none;
 
     &:hover {
-        color: $secondary-color;
+        color: $color-orange;
     }
 }
 
@@ -87,7 +87,7 @@ a {
 
 h2 {
     @include font-condensed;
-    color: $primary-color;
+    color: $color-blue;
     font-size: 3.5em;
 
     @include tablet-break {
@@ -101,7 +101,7 @@ h2 {
 
 h3 {
     @include font-condensed;
-    color: $light-gray;
+    color: $color-light-gray;
     font-size: 2.5em;
 
     @include tablet-break {
@@ -115,7 +115,7 @@ h3 {
 
 h4 {
     @include font-sans-serif;
-    color: $gray;
+    color: $color-gray;
     font-weight: bold;
     font-size: 1.5em;
     line-height: 1.5em;
@@ -138,14 +138,14 @@ blockquote {
     }
 
     p {
-        color: $light-gray;
+        color: $color-light-gray;
         position: relative;
         font-size: 1.25em;
 
         &::before {
             content: '"';
             @include font-condensed;
-            color: $primary-color;
+            color: $color-blue;
             font-size: 3em;
             position: absolute;
             left: -$spacing;
@@ -182,12 +182,12 @@ blockquote {
 
 .page-content p a {
     @include text-link;
-    border-bottom: 2px solid $secondary-color;
+    border-bottom: 2px solid $color-orange;
     transition: 3*$transition;
 
     &:hover {
-        color: $white;
-        background-color: $secondary-color;
+        color: $color-white;
+        background-color: $color-orange;
     }
 }
 
