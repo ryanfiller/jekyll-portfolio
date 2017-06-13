@@ -1,10 +1,28 @@
 .footer {
         background: $color-dark-gray;
+}
 
-    .footer--pre {
-        background: $color-blue;
 
-        .footer__contact {
+.footer-pre {
+    background: $color-blue;
+
+    .footer-contact {
+        &__header {
+            width: 100%;
+            background-color: $color-black;
+            @include font-condensed;
+           color: $color-white;
+           font-size: 1.25em;
+           text-align: center;
+           text-transform: uppercase;
+           padding: $spacing/2;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           cursor: pointer;
+        }
+
+        &__container {
             @include container;
             display: flex;
             flex-direction: column;
@@ -15,191 +33,179 @@
         }
     }
 
-    .footer--main {
-        @include container;
-        padding: $spacing;
+    .js-expander {
+        &::after {
+            margin-left: 1rem;
+            content: '';
+            display: block;
+            border-top: .5rem solid transparent;
+            border-bottom: .5rem solid transparent;
+            border-right: .75rem solid $color-white;
+            transition: $transition;
+        }
+        &.open {
+            &::after {
+                transform: rotate(-90deg);
+            }
+
+            + .js-expandee {
+                max-height: 1000px;
+            }
+        }
+    }
+}
+
+.footer--main {
+    @include container;
+    padding: $spacing;
+
+    @include tablet-break {
+        max-width: 80vw;
+    }
+
+    @include phone-break {
+        max-width: 100%;
+    }
+
+    .footer__column {
+        flex: 1;
+        margin-right: $spacing*2;
+        display: flex;
+        align-items: center;
+
+        &:last-child {
+            margin-right: 0;
+        }
 
         @include tablet-break {
-            max-width: 80vw;
+            margin-right: 0;
         }
 
-        @include phone-break {
-            max-width: 100%;
-        }
-
-        .footer__column {
+        &.footer__branding {
             flex: 1;
-            margin-right: $spacing*2;
+            width: 100%;
+            height: auto;
             display: flex;
-            align-items: center;
 
-            &:last-child {
-                margin-right: 0;
-            }
-
-            @include tablet-break {
-                margin-right: 0;
-            }
-
-            &.footer__branding {
+            a {
                 flex: 1;
+                display: block;
                 width: 100%;
-                height: auto;
-                display: flex;
 
-                a {
-                    flex: 1;
-                    display: block;
+                svg {
+                    height: auto;
                     width: 100%;
 
-                    svg {
-                        height: auto;
-                        width: 100%;
+                    path {
+                        fill: $color-white;
+                    }
 
+                    path.logo {
+                        fill: $color-white;
+                    }
+
+                    text.tagline {
+                        display: none;
+                    }
+
+                    path.initials {
+                        display: none;
+                    }
+
+                    &:hover {
                         path {
-                            fill: $color-white;
+                            fill: $color-orange;
                         }
+                    }
 
-                        path.logo {
-                            fill: $color-white;
-                        }
+                    @include tablet-break {
+                        display: block;
+                        width: 50%;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+            }
+        }
 
-                        text.tagline {
-                            display: none;
-                        }
+        &.footer__nav {
+            flex: 2;
 
-                        path.initials {
-                            display: none;
-                        }
+            .nav {
+                list-style: none;
+                padding-left: 0;
+
+                &__link {
+                    margin: $spacing/2 0;
+                    font-size: 1.5em;
+                    text-transform: uppercase;
+                    text-align: left;
+
+                    a {
+                        color: $color-white;
 
                         &:hover {
-                            path {
-                                fill: $color-orange;
-                            }
-                        }
-
-                        @include tablet-break {
-                            display: block;
-                            width: 50%;
-                            margin-left: auto;
-                            margin-right: auto;
+                            color: $color-orange;
                         }
                     }
-                }
-            }
 
-            &.footer__nav {
-                flex: 2;
-
-                .nav {
-                    list-style: none;
-                    padding-left: 0;
-
-                    &__link {
-                        margin: $spacing/2 0;
-                        font-size: 1.5em;
-                        text-transform: uppercase;
-                        text-align: left;
-
-                        a {
-                            color: $color-white;
-
-                            &:hover {
-                                color: $color-orange;
-                            }
-                        }
-
-                        &:first-child {
-                            margin-top: 0;
-                        }
-
-                        &:last-child {
-                            margin-bottom: 0;
-                        }
-                    }
-                }
-            }
-
-            &.footer__socials {
-                flex: 2;
-            }
-        }
-
-        @include tablet-break {
-            display: block;
-
-            .footer__branding {
-                width: 100%;
-                max-width: 100%;
-                margin-bottom: 2*$spacing;
-            }
-        }
-
-        .socials {
-            padding: 0;
-            flex-wrap: wrap;
-            justify-content: flex-end;
-
-            @include tablet-break {
-                flex-wrap: nowrap;
-            }
-
-            li {
-                flex: 0 1 25%;
-
-
-                .social {
-
-                    svg {
-                        max-height: 67px;
+                    &:first-child {
+                        margin-top: 0;
                     }
 
-                    &::after {
-                        @include tablet-break {
-                            margin-top: 0;
-                            opacity: .5;
-                        }
+                    &:last-child {
+                        margin-bottom: 0;
                     }
                 }
             }
         }
     }
 
-    .footer--post {
-        @include container;
-        background: $color-black;
-        color: $color-white;
-        padding-top: .5em;
-        padding-bottom: .5em;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
+    @include tablet-break {
+        display: block;
 
-        .footer__legal {
-            flex: 1;
-            @include font-condensed;
-            font-size: .9em;
+        .footer__branding {
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 2*$spacing;
+        }
+    }
+}
+
+.footer-post {
+    @include container;
+    background: $color-black;
+    color: $color-white;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .footer__legal {
+        flex: 1;
+        @include font-condensed;
+        font-size: .9em;
+    }
+
+    .socials {
+        flex: 1;
+        justify-content: flex-end;
+        padding-right: 0;
+
+        @include phone-break {
+            padding: 0;
+            height: 10px;
         }
 
-        .socials {
-            flex: 1;
-            justify-content: flex-end;
-            padding-right: 0;
-
-            @include phone-break {
-                padding: 0;
-                height: 10px;
+        li {
+            .social {
+                width: 25px;
+                height: 25px;
             }
 
-            li {
-                .social {
-                    width: 25px;
-                    height: 25px;
-                }
-
-                @include tablet-break {
-                    display: none;
-                }
+            @include tablet-break {
+                display: none;
             }
         }
     }

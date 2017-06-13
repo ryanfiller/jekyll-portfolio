@@ -12,41 +12,6 @@ iframe.contact-container {
     }
 }
 
-.js-expander {
-    &::after {
-        margin-left: 1rem;
-        content: '';
-        display: block;
-        border-top: .5rem solid transparent;
-        border-bottom: .5rem solid transparent;
-        border-right: .75rem solid $color-white;
-        transition: $transition;
-    }
-    &.open {
-        &::after {
-            transform: rotate(-90deg);
-        }
-
-        + .js-expandee {
-            max-height: 1000px;
-        }
-    }
-}
-
-.contact__header {
-    width: 100%;
-    background-color: $color-black;
-    @include font-condensed;
-   color: $color-white;
-   font-size: 1.25em;
-   text-align: center;
-   text-transform: uppercase;
-   padding: $spacing/2;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-
 .contact {
     width: 100%;
     height: 100%;
@@ -54,57 +19,44 @@ iframe.contact-container {
     justify-content: center;
     align-items: center;
 
-    form#contact-form {
-        background-color: none;
-        height: $formheight;
+    &__row {
         width: 100%;
         display: flex;
-        flex-direction: column;
-        margin: 0;
+        justify-content: space-between;
+        margin-bottom: $spacing/2;
 
         @include phone-break {
-            height: 1.25*$formheight
+            flex-wrap: wrap;
         }
 
-        .contact__row {
-            width: 100%;
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        > div {
             display: flex;
-            justify-content: space-between;
-            margin-bottom: $spacing/2;
+            flex-direction: column;
+            height: 3em;
+        }
+
+        &--half {
+            width: calc(50% - #{$spacing}/4);
 
             @include phone-break {
-                flex-wrap: wrap;
-            }
-
-            &:last-child {
-                margin-bottom: 0;
-            }
-
-            > div {
-                display: flex;
-                flex-direction: column;
-                height: 3em;
-            }
-
-            .contact__row--half {
-                width: calc(50% - #{$spacing}/4);
-
-                @include phone-break {
-                    width: 100%;
-                    margin-bottom: $spacing/2;
-
-                    &:last-child {
-                        margin-bottom: 0;
-                    }
-                }
-            }
-
-            .contact__row--full {
                 width: 100%;
+                margin-bottom: $spacing/2;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
             }
         }
 
-        .contact__row--flex {
+        &--full {
+            width: 100%;
+        }
+
+        &--flex {
             flex: 1;
             align-items: stretch;
             flex-direction: column;
@@ -118,6 +70,19 @@ iframe.contact-container {
                     flex: 1;
                 }
             }
+        }
+    }
+
+    form#contact-form {
+        background-color: none;
+        height: $formheight;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+
+        @include phone-break {
+            height: 1.25*$formheight
         }
 
         input, textarea {

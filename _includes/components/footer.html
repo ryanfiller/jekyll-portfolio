@@ -1,13 +1,13 @@
 <footer class="footer">
-    <aside class="footer--pre">
-        <header class="contact__header js-expander">
+    <aside class="footer-pre footer-contact">
+        <header class="footer-contact__header js-expander">
             Get in Touch
         </header>
-        <div class="footer__contact js-expandee">
+        <div class="footer-contact__container js-expandee">
             {% include components/contact-form.html %}
         </div>
     </aside>
-    <main class="footer--main">
+    <main class="footer-main">
         <div class="footer__column footer__branding">
             <a href="/" class="footer__logo">
                 {% include svgs/rf.svg %}
@@ -16,11 +16,8 @@
         <div class="footer__column footer__nav">
             {% include components/nav.html %}
         </div>
-        <div class="footer__column footer__socials">
-            {% include components/socials.html %}
-        </div>
     </main>
-    <aside class="footer--post">
+    <aside class="footer-post">
         <span class="footer__legal">
             Copyright 2012 - {{ 'now' | date: "%Y" }}
         </span>
