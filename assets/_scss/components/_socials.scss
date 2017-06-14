@@ -1,23 +1,24 @@
 .socials {
-    
-    flex-direction: row;
     margin: 0;
-    width: 100%;
+    padding: 0;
+    line-height: 0;
+    width: auto;
+    display: flex;
 
     li {
+        flex: 1;
         list-style: none;
 
         .social {
             cursor: pointer;
             display: block;
             width: 100%;
+            height: auto;
 
             svg {
-                width: 100%;
                 fill: $color-white;
                 display: block;
-                min-width: 20px;
-                min-height: 20px;
+                width: auto;
 
                 path {
                     fill: $color-white;
