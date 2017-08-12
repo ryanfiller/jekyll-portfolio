@@ -8,14 +8,10 @@
         </div>
     </aside>
     <main class="footer-main">
-        <div class="footer__column footer__branding">
-            <a href="/" class="footer__logo">
-                {% include svgs/rf.svg %}
-            </a>
-        </div>
-        <div class="footer__column footer__nav">
-            {% include components/nav.html %}
-        </div>
+        <a href="/" class="footer__logo">
+            {% include svgs/rf.svg %}
+        </a>
+        {% include components/nav.html %}
     </main>
     <aside class="footer-post">
         <div class="copyright">
