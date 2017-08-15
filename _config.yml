@@ -63,9 +63,6 @@ collections:
         output: true
         permalink: /portfolio/:title/
 
-sass:
-    sass_dir: /assets/_scss
-
 gems:
   - jekyll-feed
   - octopress-paginate

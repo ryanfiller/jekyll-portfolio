@@ -18,5 +18,16 @@
   "homepage": "https://github.com/ryanfiller89/jekyll-portfolio#readme",
   "devDependencies": {
     "surge": "^0.18.0"
+  },
+  "dependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-data": "^1.2.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-shell": "^0.6.3",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-stylus": "^2.6.0",
+    "stylus": "^0.54.5"
   }
 }
