@@ -38,17 +38,55 @@
         color: $color-white;
         font-size: 1em;
 
+        @include tablet-break {
+            display: block;
+        }
+
         .copyright {
             &:before {
                 content: '\00a9';
             }
+
+            @include tablet-break {
+                text-align: center;
+                padding: 1em;
+            }
         }
 
         .socials{
+            svg {
+                height: 2.5em;
+                width: auto;
+            }
+
+            @include tablet-break {
+                justify-content: center;
                 svg {
-                    height: 2.5em;
+                    height: 3em;
                     width: auto;
                 }
+            }
+
+            @include phone-break {
+                margin-left: -$spacing;
+                margin-right: -$spacing;
+
+                li {
+                    flex: 1;
+                }
+
+                a.social {
+                    &:after {
+                        margin-top: 0;
+                    }
+                }
+
+                svg {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
         }
     }
 }
