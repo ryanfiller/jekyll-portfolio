@@ -1,14 +1,16 @@
-<ul class="nav" role="navigation">
-    {% assign navigation_pages = site.html_pages | sort: 'navigation_weight' %}
-    {% for p in navigation_pages %}
-        {% if p.navigation_weight %}
-            {% if p.url contains '/page' %}{% else %}
-                <li class="nav__link {% if p.url == page.url %}active{% endif %}{% if p.url contains page.parent %} active{% endif %}">
-                    <a href="{{ p.url }}" data-text="{{ p.title }}">
-                        {{ p.title }}
-                    </a>
-                </li>
+<nav class="nav" role="navigation">
+    <ul class="nav__list">
+        {% assign navigation_pages = site.html_pages | sort: 'navigation_weight' %}
+        {% for p in navigation_pages %}
+            {% if p.navigation_weight %}
+                {% if p.url contains '/page' %}{% else %}
+                    <li class="nav__link {% if p.url == page.url %}active{% endif %}{% if p.url contains page.parent %} active{% endif %}">
+                        <a href="{{ p.url }}" data-text="{{ p.title }}">
+                            {{ p.title }}
+                        </a>
+                    </li>
+                {% endif %}
             {% endif %}
-        {% endif %}
-    {% endfor %}
-</ul>
+        {% endfor %}
+    </ul>
+</nav>
