@@ -6,10 +6,6 @@
 # title: Work
 # navigation_weight: 1
 
-layout: home-split
-slides:
-    - https://media.giphy.com/media/l3978y5HqiEtqupiM/giphy.gif
-    - https://media.giphy.com/media/foqJmiSmrgmrK/source.gif
-    - https://media.giphy.com/media/cHrCWsAoMTlyE/giphy.gif
+layout: homepage
 # title: ryanfiller.com
 ---
