@@ -1,7 +1,39 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Dosis:300,400,500,700");
+html,
 body {
-  background: #0f0;
+  margin: 0;
+  padding: 0;
 }
 body {
-  color: #ff0;
-  padding: 20px;
+  font-size: 16px;
+}
+.header {
+  background-color: #1e2223;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+.header__logo svg * {
+  fill: #fcfaf6;
+}
+.header .nav {
+  flex: 1;
+}
+.header .nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.header .nav__link a {
+  color: #fcfaf6;
+  text-decoration: none;
+  text-transform: uppercase;
 }

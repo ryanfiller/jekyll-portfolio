@@ -1,0 +1,20 @@
+// based on: http://1pixelout.net/2015/10/02/simple-breakpoint-media-queries-with-stylus/
+
+large = 1200px
+small = 950px
+tablet = 768px
+phone = 480px
+
+media_queries = {
+    large : "only screen and (min-width: large)",
+    tablet : "only screen and (max-width: tablet)",
+    mobile : "only screen and (max-width: phone)"
+}
+
+breakpoint(breakpoints)
+    conditions = ()
+    for breakpoint in breakpoints
+        push(conditions, media_queries[breakpoint])
+    conditions = join(", ", conditions)
+    @media conditions
+        {block}

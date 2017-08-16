@@ -6,7 +6,7 @@
 # title: Work
 # navigation_weight: 1
 
-layout: home-split
+layout: home
 slides:
     - https://media.giphy.com/media/l3978y5HqiEtqupiM/giphy.gif
     - https://media.giphy.com/media/foqJmiSmrgmrK/source.gif

@@ -1,0 +1,37 @@
+.header {
+    background-color: color-black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    container()
+
+    &__logo {
+        svg * {
+            fill: color-white;
+        }
+    }
+
+    .nav {
+        flex: 1;
+
+        +breakpoint(tablet)
+            display: none;
+
+
+        &__list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        &__link a {
+            color: color-white;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-sans-serif-condensed();
+        }
+    }
+}
