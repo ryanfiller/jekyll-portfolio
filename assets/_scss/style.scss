@@ -1,40 +1,43 @@
-/* Globals */
-* {
-    box-sizing: border-box;
-}
+@import
+    'config/module';
 
-main, article, aside, blockquote,	caption, header, footer {
-    display: block;
-}
-
-/* Config */
-@import "config/responsive";
-@import "config/colors";
-@import "config/animations";
-@import "config/layout";
-@import "config/typography";
-
-/* Vendor */
-@import "vendor/swiper";
-
-/* Components */
-@import "components/socials";
-@import "components/buttons";
-@import "components/header";
-@import "components/subnav";
-@import "components/mobile-nav";
-@import "components/banner";
-@import "components/swiper";
-@import "components/footer";
-@import "components/recent-posts";
-@import "components/contact-form";
-
-/* Pages */
-@import "pages/page";
-@import "pages/blog-list";
-@import "pages/blog-detail";
-@import "pages/portfolio-list";
-@import "pages/portfolio-detail";
-@import "pages/home-slider";
-@import "pages/home-split";
-@import "pages/404";
+// /* Globals */
+// * {
+//     box-sizing: border-box;
+// }
+//
+// main, article, aside, blockquote,	caption, header, footer {
+//     display: block;
+// }
+//
+// /* Config */
+// @import "config/responsive";
+// @import "config/colors";
+// @import "config/animations";
+// @import "config/layout";
+// @import "config/typography";
+//
+// /* Vendor */
+// @import "vendor/swiper";
+//
+// /* Components */
+// @import "components/socials";
+// @import "components/buttons";
+// @import "components/header";
+// @import "components/subnav";
+// @import "components/mobile-nav";
+// @import "components/banner";
+// @import "components/swiper";
+// @import "components/footer";
+// @import "components/recent-posts";
+// @import "components/contact-form";
+//
+// /* Pages */
+// @import "pages/page";
+// @import "pages/blog-list";
+// @import "pages/blog-detail";
+// @import "pages/portfolio-list";
+// @import "pages/portfolio-detail";
+// @import "pages/home-slider";
+// @import "pages/home-split";
+// @import "pages/404";
