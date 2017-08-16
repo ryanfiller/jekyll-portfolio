@@ -1,3 +1,12 @@
 .mobile-tray {
     display: none;
 }
+
+.header__logo svg, .footer__logo svg {
+    max-width: 100vw;
+}
+
+.socials svg {
+    height: 100px;
+    width: auto;
+}
