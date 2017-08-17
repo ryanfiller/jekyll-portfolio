@@ -71,6 +71,25 @@ body.page {
             }
         }
 
+        blockquote {
+            font-size: 1.25em;
+            border-left: 1.5em solid $color-blue;
+            padding-left: .5em;
+            margin: $spacing 2em $spacing 0;
+            position: relative;
+
+            &:before {
+                content: '\201C';
+                @include font-condensed;
+                color: $color-white;
+                position: absolute;
+                font-size: 4em;
+                top: 0.5em;
+                left: -0.33em;
+                line-height: 0;
+            }
+        }
+
         iframe {
           margin-bottom: $spacing;
         }
