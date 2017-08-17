@@ -1,9 +1,8 @@
 .banner {
     width: 100%;
-    background-size: cover;
-    background-position: center;
     padding-top: 2*$spacing;
     padding-bottom: 2*$spacing;
+    text-align: center;
 
     @include tablet-break {
         padding-top: 3*$spacing;
@@ -25,76 +24,26 @@
         @include font-condensed;
         font-weight: 300;
         text-transform: uppercase;
-        text-align: center;
         font-size: 6em;
         letter-spacing: .025em;
         color: $color-black;
+        display: inline-block;
+        padding: 0;
+        width: auto;
 
         @include tablet-break {
             font-size: 3.5em;
         }
     }
 
-    &--glitch {
-        text-align: center;
-
-        .banner__header {
-            display: inline-block;
-            padding: 0;
-            @include glitch;
-            width: auto;
-        }
-    }
-
     &--image {
+        background-size: cover;
+        background-position: center;
         @include image-overlay;
         box-shadow: $shadow-inset;
 
         .banner__header {
             color: $color-white;
-        }
-    }
-}
-
-.overlap {
-    .banner {
-        .banner__header {
-            padding-bottom: 4*$spacing;
-        }
-
-        &::after {
-            content: '';
-            display: block;
-            background: $color-white;
-            width: $container-width;
-            height: 5*$spacing;
-            position: absolute;
-            right: 0; bottom: -1*$spacing; left: 0;
-            margin: 0 auto;
-            z-index: 2;
-            box-shadow: $shadow;
-        }
-    }
-
-    & + .page-content {
-        background: $color-white;
-        z-index: 4;
-        margin-top: -4*$spacing;
-    }
-
-    @include tablet-break {
-        .banner {
-            .banner__header {
-                padding-bottom: 0;
-            }
-
-            &::after {
-                display: none;
-            }
-        }
-
-        & + .page-content {
-            margin-top: 0;
         }
     }
 }
