@@ -1,5 +1,5 @@
 ---
-layout: portfolio-detail
+layout: portfolio/item
 title:  RocketFuel Template Sites
 tags:
     - dev

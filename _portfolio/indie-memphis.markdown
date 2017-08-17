@@ -1,5 +1,5 @@
 ---
-layout: portfolio-detail
+layout: portfolio/item
 title:  Indie Memphis Postcards
 tags:
     - draw

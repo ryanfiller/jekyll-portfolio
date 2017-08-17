@@ -1,5 +1,5 @@
 ---
-layout: portfolio-detail
+layout: portfolio/item
 title:  Jack Morris Auto Glass
 tags:
     - design

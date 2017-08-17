@@ -1,5 +1,5 @@
 ---
-layout: portfolio-detail
+layout: portfolio/item
 title:  Tech901 Collateral
 tags:
     - design

@@ -1,5 +1,5 @@
 ---
-layout: portfolio-detail
+layout: portfolio/item
 title:  Dixie Building Supply
 tags:
     - design
@@ -14,4 +14,4 @@ slides:
 published: false
 ---
 
-blah blah blah
+blah blah blah, blah blah

@@ -1,5 +1,5 @@
 ---
-layout: portfolio-list
+layout: portfolio/list
 title: Work
 permalink: /portfolio/
 navigation_weight: 1

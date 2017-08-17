@@ -1,5 +1,5 @@
 ---
-layout: portfolio-list-filtered
+layout: portfolio/list-filtered
 title: Draw
 permalink: /draw/
 filter: draw
