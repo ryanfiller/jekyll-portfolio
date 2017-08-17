@@ -1,6 +1,7 @@
 @import
     'config/module',
-    'components/module';
+    'components/module',
+    'pages/module';
 
 //
 // /* Vendor */
@@ -14,7 +15,6 @@
 // @import "components/recent-posts";
 //
 // /* Pages */
-// @import "pages/page";
 // @import "pages/blog-list";
 // @import "pages/blog-detail";
 // @import "pages/portfolio-list";
