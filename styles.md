@@ -1,7 +1,7 @@
 ---
 layout: page
 title: styles
-permalink: /test-styles/
+permalink: /styles/
 ---
 
 Nulla vitae elit libero, a pharetra augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Maecenas sed diam eget risus varius blandit sit amet non magna. <a href="#">Cras mattis consectetur purus sit amet fermentum.</a> Curabitur blandit tempus porttitor.
