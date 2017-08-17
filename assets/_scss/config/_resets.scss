@@ -3,6 +3,10 @@ html, body {
     margin: 0;
 }
 
-main, article, aside, blockquote,	caption, header, footer {
+main, article, aside, blockquote, caption, header, footer {
     display: block;
+}
+
+* {
+    box-sizing: border-box;
 }
