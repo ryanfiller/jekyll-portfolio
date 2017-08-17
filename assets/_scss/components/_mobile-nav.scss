@@ -2,12 +2,12 @@
     .mobile-nav {
         max-height: 0;
         overflow: hidden;
-        transition: $transition;
+        transition: $transition*2;
     }
 
     &.open {
         .mobile-nav {
-            max-height: none;
+            max-height: 100vh;
         }
     }
 }
@@ -46,14 +46,10 @@
     &--top {
         top: 0;
         transform: rotate(0deg);
-        transition: top $transition/2 ease $transition/2,
-                    transform 0$transition/2 ease 0s;
 
         .open & {
             top: calc(50% - .125rem);
             transform: rotate(45deg);
-            transition: top $transition/2 ease 0s,
-                        transform 0$transition/2 ease $transition/2;
         }
     }
 
@@ -61,26 +57,19 @@
         top: 50%;
         transform: translateY(-50%);
         opacity: 1;
-        transition: opacity 0s ease $transition/2;
 
         .open & {
             opacity: 0;
-            transition: opacity 0s ease $transition/2;
         }
     }
 
     &--bottom {
         position: absolute;
         bottom: 0;
-        transition: bottom $transition/2 ease $transition/2,
-                    transform 0$transition/2 ease 0s;
 
         .open & {
             bottom: calc(50% - .125rem);
             transform: rotate(-45deg);
-            transition: bottom $transition/2 ease 0s,
-                        transform 0$transition/2 ease $transition/2;
-
         }
     }
 }
