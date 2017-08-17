@@ -10,3 +10,8 @@
     height: 100px;
     width: auto;
 }
+
+.mobile-nav {
+    max-height: 0;
+    overflow: hidden;
+}
