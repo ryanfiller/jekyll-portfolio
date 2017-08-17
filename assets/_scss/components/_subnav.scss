@@ -1,136 +1,88 @@
 .subnav {
-    list-style: none;
-    margin-top: 0;
-    margin-bottom: 0;
-    display: flex;
-    align-items: center;
     @include container;
-    padding: 0;
-    margin-bottom: $spacing;
-    position: relative;
-    background: $color-gray;
-    color: $color-white;
+    @include readable;
+    font-size: 1.5rem;
 
-    @include tablet-break {
-        width: 50%;
-        margin: 0 auto $spacing auto;
-        flex-direction: column;
-    }
-
-    @include phone-break {
-        width: calc(100% - (2*#{$spacing}));
-        margin: 0 $spacing $spacing $spacing;
-    }
-
-    .subnav__title {
-        width: 100%;
+    &__title {
         display: none;
+        background-color: $color-dark-gray;
         justify-content: space-between;
         align-items: center;
         @include font-condensed;
-        font-size: 1.25em;
-        padding-left: $spacing;
-
-        @include tablet-break {
-            display: flex;
-        }
-
-        .subnav__dropdown--wrap {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 50px;
-            width: 50px;
-            cursor: pointer;
-
-            .subnav__dropdown {
-                display: block;
-                width: 0;
-                height: 0;
-                border-top: 10px solid transparent;
-                border-bottom: 10px solid transparent;
-                border-right: 15px solid $color-white;
-                transition: $transition;
-            }
-        }
-    }
-
-    .subnav__list {
+        color: $color-white;
         text-transform: uppercase;
-        text-decoration: none;
-        padding: 0;
-        margin: 0;
-        width: 100%;
-        display: flex;
-        transition: $transition;
+        font-size: 1.25em;
+        padding: $spacing/2 $spacing;
 
-        @include tablet-break {
-            max-height: 0;
-            overflow: hidden;
-            position: absolute;
-            z-index: 200;
-            top: 100%;
-            flex-direction: column;
+        &:after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 0;
+            border-top: .5em solid transparent;
+            border-bottom: .5em solid transparent;
+            border-right: .75em solid $color-white;
+            transition: $transition;
         }
 
-        @include phone-break {
-            position: static;
-        }
-
-        .subnav__link {
-            background: $color-black;
-            flex: 1;
-            list-style: none;
-
-            a {
-                display: block;
-                padding: $spacing/2 $spacing;
-                color: $color-white;
-
-                @include tablet-break {
-                    padding: $spacing;
-                }
-            }
-
-            &.active {
-                background: $color-blue;
-            }
-        }
-    }
-
-    &.open {
-        .subnav__dropdown--wrap {
-            .subnav__dropdown {
+        &.open {
+            &:after {
                 transform: rotate(-90deg);
             }
-        }
-        .subnav__list {
-            max-height: 1000px;
+
+            + .subnav__list {
+                max-height: none;
+            }
         }
     }
 
-    .subnav__link {
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
 
+    &__link {
+        flex: 1;
+        background-color: $color-gray;
 
-        a {
-            color: $color-white;
-            font-size: 1.25em;
-            text-align: center;
+        &.active {
+            background-color: $color-blue;
+        }
+
+        a  {
             display: block;
-            width: 100%;
-            padding-top: .5em;
-            padding-bottom: .5em;
+            padding: $spacing/2 $spacing;
             @include font-sans-serif;
+            color: $color-white;
+            text-align: center;
+            text-transform: uppercase;
             text-decoration: none;
-            background-color: $color-gray;
+            box-sizing: border-box;
+
+            &:hover {
+                background-color: $color-black;;
+            }
+        }
+    }
+
+    @include tablet-break {
+
+        max-width: 50%;
+
+        &__title {
+            display: flex;
         }
 
-        &:hover a {
-            background: $color-black;
+        &__list {
+            display: block;
+            max-height: 0;
+            overflow: hidden;
         }
+    }
 
-        &.active a {
-            background: $color-blue;
-        }
+    @include phone-break {
+        max-width: 100%;
     }
 }
