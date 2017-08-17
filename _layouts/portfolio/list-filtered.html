@@ -1,6 +1,6 @@
 {% include head.html %}
 
-<body class="{{ page.layout }}">
+<body class="{{ page.layout | replace: '/', '-' }}">
 
 	<div class="site-wrap">
 
@@ -12,7 +12,7 @@
 
 	        {% include components/banner.html %}
 
-	        <main class="page-content {{ page.layout }}">
+	        <main class="page-content {{ page.layout | replace: '/', '-' }}">
 
 	            {% include components/layout/subnav.html %}
 

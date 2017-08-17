@@ -1,6 +1,6 @@
 {% include head.html %}
 
-<body class="{{ page.layout }}">
+<body class="{{ page.layout | replace: '/', '-' }}">
 
 	<div class="site-wrap">
 		{% include components/layout/mobile-nav.html %}

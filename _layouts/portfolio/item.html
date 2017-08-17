@@ -1,6 +1,6 @@
 {% include head.html %}
 
-<body class="{{ page.layout }} portfolio-page">
+<body class="{{ page.layout | replace: '/', '-' }} portfolio-page">
 
 	<div class="site-wrap">
 
