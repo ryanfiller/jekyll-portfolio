@@ -1,4 +1,4 @@
-$transition: .2s;
+$transition: 0.2s;
 
 a, a * {
     transition: $transition;
@@ -15,11 +15,11 @@ svg, svg * {
 .navicon {
     &--top {
         transition: top $transition ease $transition,
-                    transform 0$transition ease 0s;
+                    transform $transition ease 0s;
 
         .open & {
             transition: top $transition ease 0s,
-                        transform 0$transition ease $transition;
+                        transform $transition ease $transition;
         }
     }
 
@@ -33,11 +33,11 @@ svg, svg * {
 
     &--bottom {
         transition: bottom $transition ease $transition,
-                    transform 0$transition ease 0s;
+                    transform $transition ease 0s;
 
         .open & {
             transition: bottom $transition ease 0s,
-                        transform 0$transition ease $transition;
+                        transform $transition ease $transition;
         }
     }
 }
