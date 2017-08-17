@@ -1,9 +1,9 @@
 {% include head.html %}
 
 <div class="site-wrap">
-	<div class="mobile-tray">
-		{% include components/mobile-nav.html %}
-	</div>
+
+	{% include components/mobile-nav.html %}
+	
 	<div class="site {{ page.layout }}">
 
         {% include components/header.html %}
@@ -11,7 +11,7 @@
         {% include components/banner-glitch.html %}
 
         <main class="page-content {{ page.layout }}">
-			
+
             {% include components/subnav.html %}
 
             <div class="portfolio-grid">

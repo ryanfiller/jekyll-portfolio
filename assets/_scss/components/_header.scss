@@ -28,7 +28,7 @@
     .nav {
         flex: 1;
 
-        @include tablet-break {
+        @include phone-break {
             display: none;
         }
 
@@ -60,73 +60,6 @@
             &.active:hover a {
                 @include glitch($color-orange, $color-black);
             }
-        }
-    }
-}
-
-.navicon {
-    align-self: stretch;
-    width: 50px;
-    height: auto;
-    position: relative;
-    margin-left: 2rem;
-    display: none;
-
-    @include tablet-break {
-        display: block;
-    }
-
-    &--top, &--middle, &--bottom {
-        display: block;
-        height: .25rem;
-        width: 100%;
-        background-color: $color-white;
-        position: absolute;
-        transform-origin: center center;
-    }
-
-    &--top {
-        top: 0;
-        transition-property: top, transform;
-        transition-duration: .2s, .2s;
-        transition-delay: .2s, 0s;
-
-        .open & {
-            top: calc(50% - .125rem);
-            transform: rotate(45deg);
-            transition-property: top, transform;
-            transition-duration: .2s, .2s;
-            transition-delay: 0s, .2s;
-        }
-    }
-
-    &--middle {
-        top: 50%;
-        transform: translateY(-50%);
-        transition: 0s;
-        transition-delay: .2s;
-
-        .open & {
-            opacity: 0;
-            transition: 0s;
-            transition-delay: .2s;
-        }
-    }
-
-    &--bottom {
-        position: absolute;
-        z-index: 1;
-        bottom: 0;
-        transition-property: bottom, transform;
-        transition-duration: .2s, .2s;
-        transition-delay: .2s, 0s;
-
-        .open & {
-            bottom: calc(50% - .125rem);
-            transform: rotate(-45deg);
-            transition-property: bottom, transform;
-            transition-duration: .2s, .2s;
-            transition-delay: 0s, .2s;
         }
     }
 }

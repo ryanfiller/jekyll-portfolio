@@ -1,31 +1,3 @@
-{% assign tags =  site.portfolio | map: 'tags' | join: ','  | split: ',' | uniq %}
-
-<ul class="mobile-nav" role="navigation">
-    {% assign navigation_pages = site.html_pages | sort: 'navigation_weight' %}
-    {% for p in navigation_pages %}
-        {% if p.navigation_weight %}
-            {% if p.url contains '/page' %}{% else %}
-                <li class="mobile-nav__row {% if p.url == page.url %} active{% endif %}{% if p.url contains page.parent %}{% unless page.parent == "work" %} active{% endunless %}{% endif %}">
-                    <a href="{{ p.url }}">{{ p.title }}</a>
-
-                    {% if p.title == 'Work' %}
-
-                        <div class="mobile-nav__selector-wrap js-mobile-nav-selector">
-                            <div class="mobile-nav__selector"></div>
-                        </div>
-
-                        <ul class="mobile-subnav js-mobile-subnav">
-                          {% for tag in tags %}
-                              <li class="mobile-nav__row {% if page.filter == tag %}active js-sub-active{% endif %}">
-                                  <a href="/{{ tag }}/">{{ tag }}</a>
-                              </li>
-                          {% endfor %}
-                        </ul>
-
-                    {% endif %}
-                </li>
-            {% endif %}
-        {% endif %}
-    {% endfor %}
-</ul>
-{% include components/socials.html %}
+<div class="mobile-nav">
+    {% include components/nav.html %}
+</div>
