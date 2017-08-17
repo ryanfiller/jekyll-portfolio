@@ -1,0 +1,101 @@
+@mixin grid-block-active {
+
+    &::before {
+        content: '';
+        display: block;
+        @include pixels;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        opacity: .5;
+    }
+
+    .portfolio-block__info {
+        transform: translateY(0);
+    }
+}
+
+.portfolio-block {
+    display: block;
+    background-size: cover;
+    background-position: center center;
+    text-decoration: none;
+    color: $color-white;
+    text-shadow: $shadow;
+    position: relative;
+    overflow: hidden;
+    font-size: 1.5rem;
+    padding: $spacing;
+
+    &__info {
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transform: translateY(33.33333%);
+        transition: $transition;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        flex: 2;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        @include font-condensed;
+        color: $color-white;
+        text-align: center;
+        @include font-size(3.5em, 3.25em, 3em);
+        margin: 0;
+        padding-bottom: $spacing;
+    }
+
+    &__hidden {
+        flex: 1;
+        text-align: center;
+    }
+
+    .meta {
+        display: block;
+        margin-bottom: $spacing/2;
+    }
+
+    &__link {
+        display: block;
+        color: $color-white;
+        font-size: 1.5em;
+
+        &::after{
+            content: ' ▸▸';
+            display: inline-block;
+            position: relative;
+        }
+
+        &:hover {
+            color: $color-white;
+        }
+    }
+
+    .video {
+        height: 100%;
+        width: auto;
+    }
+
+    &:hover {
+        .portfolio-block__title, .portfolio-block__link {
+            color: $color-orange;
+        }
+
+        @include grid-block-active;
+    }
+
+    @include tablet-break {
+        @include grid-block-active;
+    }
+}
