@@ -1,32 +1,36 @@
 {% include head.html %}
 
-<div class="site-wrap">
+<body class="{{ page.layout }}">
 
-	{% include components/layout/mobile-nav.html %}
+	<div class="site-wrap">
 
-	<div class="site {{ page.layout }}">
+		{% include components/layout/mobile-nav.html %}
 
-        {% include components/layout/header.html %}
+		<div class="site">
 
-        <div class="overlap">
-        {% include components/banner-image.html %}
-        </div>
+	        {% include components/layout/header.html %}
 
-        <main class="page-content blog-post">
+	        <div class="overlap">
+	        {% include components/banner-image.html %}
+	        </div>
 
-			<p class="blog-post__excerpt">
-				{{ page.description }}
-			</p>
+	        <main class="page-content blog-post">
 
-            {% include components/meta.html%}
+				<p class="blog-post__excerpt">
+					{{ page.description }}
+				</p>
 
-			<div class="blog-post__content">
-            	{{ content }}
-			</div>
+	            {% include components/meta.html%}
 
-            <a class="back__link" href="/blog"> Back to all posts</a>
-        </main>
+				<div class="blog-post__content">
+	            	{{ content }}
+				</div>
 
-        {% include components/layout/footer.html %}
-    </div>
-</div>
+	            <a class="back__link" href="/blog"> Back to all posts</a>
+	        </main>
+
+	        {% include components/layout/footer.html %}
+	    </div>
+	</div>
+
+</body>

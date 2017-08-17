@@ -1,20 +1,24 @@
 {% include head.html %}
 
-<div class="site-wrap">
+<body class="{{ page.layout }}">
 
-	{% include components/layout/mobile-nav.html %}
-	
-	<div class="site {{ page.layout }}">
+	<div class="site-wrap">
 
-        {% include components/layout/header.html %}
+		{% include components/layout/mobile-nav.html %}
 
-        {% include components/banner.html %}
+		<div class="site">
 
-        <main class="page-content">
-            {{ page.content }}
-        </main>
+	        {% include components/layout/header.html %}
 
-        {% include components/layout/footer.html %}
+	        {% include components/banner.html %}
 
-    </div>
-</div>
+	        <main class="page-content">
+	            {{ page.content }}
+	        </main>
+
+	        {% include components/layout/footer.html %}
+
+	    </div>
+	</div>
+
+</body>

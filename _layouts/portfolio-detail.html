@@ -1,29 +1,33 @@
 {% include head.html %}
 
-<div class="site-wrap">
+<body class="{{ page.layout }} portfolio-page">
 
-	{% include components/layout/mobile-nav.html %}
-	
-	<div class="site {{ page.layout }} portfolio-page">
+	<div class="site-wrap">
 
-		{% include components/layout/header.html %}
+		{% include components/layout/mobile-nav.html %}
 
-		{% include components/swiper.html %}
+		<div class="site">
 
-		<main class="page-content portfolio-detail">
-			<div class="portfolio__header">
-				<h1 class="portfolio__h1">{{ page.title }}</h1>
+			{% include components/layout/header.html %}
 
-				{% include components/meta.html %}
-			</div>
+			{% include components/swiper.html %}
 
-		    {{ content }}
-			<span class="back__link">
-				<a href="/{{ page.parent }}"> Back to Portfolio</a>
-			</span>
-		</main>
+			<main class="page-content portfolio-detail">
+				<div class="portfolio__header">
+					<h1 class="portfolio__h1">{{ page.title }}</h1>
 
-		{% include components/layout/footer.html %}
+					{% include components/meta.html %}
+				</div>
 
+			    {{ content }}
+				<span class="back__link">
+					<a href="/{{ page.parent }}"> Back to Portfolio</a>
+				</span>
+			</main>
+
+			{% include components/layout/footer.html %}
+
+		</div>
 	</div>
-</div>
+
+</body>

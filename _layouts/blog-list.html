@@ -1,54 +1,58 @@
 {% include head.html %}
 
-<div class="site-wrap">
+<body class="{{ page.layout }}">
 
-	{% include components/layout/mobile-nav.html %}
+	<div class="site-wrap">
 
-	<div class="site {{ page.layout }}">
+		{% include components/layout/mobile-nav.html %}
 
-        {% include components/layout/header.html %}
+		<div class="site">
 
-        {% include components/banner-glitch.html %}
+	        {% include components/layout/header.html %}
 
-        <main class="page-content blog-list">
-            {% for post in paginator.posts %}
-                <article class="excerpt__block-link">
-                    <a href="{{ post.url }}" class="excerpt">
-                        <div class="excerpt__header" style="background-image:url({{ post.thumbnail }});">
-                            {% include components/meta.html%}
-                			<h2 class="excerpt__title">{{ post.title }}</h2>
-                		</div>
-                        <main class="excerpt__body">
-                			<p class="excerpt__text">
-								{{ post.description }}
-							</p>
-                			<span class="excerpt__link">Read More</span>
-                		</main>
-                    </a>
-                </article>
-            {% endfor %}
+	        {% include components/banner-glitch.html %}
 
-			{% if paginator.total_pages > 1 %}
-				<div class="blog-pagination">
-					<div class="blog-pagination__prev">
-						{% if paginator.previous_page %}
-							<a href="{{ paginator.previous_page_path }}">Previous</a>
-						{% endif %}
+	        <main class="page-content blog-list">
+	            {% for post in paginator.posts %}
+	                <article class="excerpt__block-link">
+	                    <a href="{{ post.url }}" class="excerpt">
+	                        <div class="excerpt__header" style="background-image:url({{ post.thumbnail }});">
+	                            {% include components/meta.html%}
+	                			<h2 class="excerpt__title">{{ post.title }}</h2>
+	                		</div>
+	                        <main class="excerpt__body">
+	                			<p class="excerpt__text">
+									{{ post.description }}
+								</p>
+	                			<span class="excerpt__link">Read More</span>
+	                		</main>
+	                    </a>
+	                </article>
+	            {% endfor %}
+
+				{% if paginator.total_pages > 1 %}
+					<div class="blog-pagination">
+						<div class="blog-pagination__prev">
+							{% if paginator.previous_page %}
+								<a href="{{ paginator.previous_page_path }}">Previous</a>
+							{% endif %}
+						</div>
+
+						<span class="blog-pagination__current">{{ paginator.page }}</span>
+
+						<div class="blog-pagination__next">
+							{% if paginator.next_page %}
+								<a href="{{ paginator.next_page_path }}">Next</a>
+							{% endif %}
+						</div>
 					</div>
+				{% endif %}
 
-					<span class="blog-pagination__current">{{ paginator.page }}</span>
+	        </main>
 
-					<div class="blog-pagination__next">
-						{% if paginator.next_page %}
-							<a href="{{ paginator.next_page_path }}">Next</a>
-						{% endif %}
-					</div>
-				</div>
-			{% endif %}
+	        {% include components/layout/footer.html %}
 
-        </main>
+	    </div>
+	</div>
 
-        {% include components/layout/footer.html %}
-
-    </div>
-</div>
+</body>

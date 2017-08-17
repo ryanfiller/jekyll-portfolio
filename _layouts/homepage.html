@@ -1,28 +1,32 @@
 {% include head.html %}
 
-<div class="site-wrap">
+<body class="{{ page.layout }}">
 
-	{% include components/layout/mobile-nav.html %}
+	<div class="site-wrap">
 
-	<div class="site {{ page.layout }}">
-		{% include components/layout/header.html %}
+		{% include components/layout/mobile-nav.html %}
 
-		<section class="page-content">
+		<div class="site">
+			{% include components/layout/header.html %}
 
-			<div class="portfolio-grid">
+			<section class="page-content">
 
-				{% assign cats = site.portfolio | group_by:"category" %}
+				<div class="portfolio-grid">
 
-				{% for cat in cats %}
-					{% for item in cat.items limit:1 %}
-					  {{ item.title }}
+					{% assign cats = site.portfolio | group_by:"category" %}
+
+					{% for cat in cats %}
+						{% for item in cat.items limit:1 %}
+						  {{ item.title }}
+						{% endfor %}
 					{% endfor %}
-				{% endfor %}
 
-            </div>
+	            </div>
 
-		</section>
+			</section>
 
-		{% include components/layout/footer.html %}
+			{% include components/layout/footer.html %}
+		</div>
 	</div>
-</div>
+
+</body>
