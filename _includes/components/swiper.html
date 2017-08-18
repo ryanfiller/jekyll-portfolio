@@ -1,11 +1,11 @@
-<section class="banner--swiper {% if page.slides.size > 1 %}swiper-container{% endif %}" style="background-color:#{{ page.brand-color }};">
+<section class="portfolio-swiper {% if page.slides.size > 1 %}swiper-container{% endif %}" style="background-color:#{{ page.brand-color }};">
 	<!-- Additional required wrapper -->
 	<div class="swiper-wrapper">
 		<!-- Slides -->
 			{% for image in page.slides %}
-				<section class="swiper-slide" style="background-image: url('{{ image }}');">
+				<div class="swiper-slide" style="background-image: url('{{ image }}');">
 					<img src="{{ image }}" alt="portfolio image">
-				</section>
+				</div>
 			{% endfor %}
 	</div>
 	{% if page.slides.size > 1 %}

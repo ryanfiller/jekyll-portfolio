@@ -92,6 +92,12 @@ svg, svg * {
     }
 }
 
+@mixin float {
+    position: relative;
+    top: -1px;
+    transition: position 2*$transition;
+}
+
 @mixin social-hover($brand-color) {
     overflow: hidden;
     position: relative;
