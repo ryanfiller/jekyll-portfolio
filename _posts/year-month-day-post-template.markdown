@@ -1,5 +1,5 @@
 ---
-layout: blog-post
+layout: blog/blog-post
 title:  "title"
 date:   2016-12-07 13:52:34 -0600
 tags: test
