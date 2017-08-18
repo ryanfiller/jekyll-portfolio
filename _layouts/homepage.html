@@ -1,3 +1,5 @@
+{% assign tags =  site.portfolio | map: 'tags' | join: ','  | split: ',' | uniq %}
+
 {% include head.html %}
 
 <body class="{{ page.layout | replace: '/', '-' }}">
@@ -9,19 +11,17 @@
 		<div class="site">
 			{% include components/layout/header.html %}
 
+			<a href="/" class="logo">
+		        {% include svgs/logo.svg %}
+		    </a>
+
 			<section class="page-content">
 
-				<div class="portfolio-grid">
-
-					{% assign cats = site.portfolio | group_by:"category" %}
-
-					{% for cat in cats %}
-						{% for item in cat.items limit:1 %}
-						  {{ item.title }}
-						{% endfor %}
-					{% endfor %}
-
-	            </div>
+				{% for tag in tags %}
+					<div class="">
+						<a href="/{{ tag }}">{{ tag }}</a>
+					</div>
+				{% endfor %}
 
 			</section>
 

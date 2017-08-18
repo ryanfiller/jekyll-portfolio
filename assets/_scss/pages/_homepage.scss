@@ -1,3 +1,60 @@
 body.homepage {
-    
+
+    .header {
+        display: none;
+    }
+
+    .site-wrap, .site {
+        min-height: 100vh;
+    }
+
+    .site {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .page-content {
+        flex: 1;
+        display: flex;
+
+        div {
+            flex: 1;
+            position: relative;
+
+            &:nth-child(1) {background-color:navy;}
+            &:nth-child(2) {background-color:lime;}
+            &:nth-child(3) {background-color:purple;}
+
+            a {
+                color: $color-white;
+                text-decoration: none;
+                font-size: 3rem;
+                text-transform: uppercase;
+                @include font-condensed;
+                text-align: center;
+                display: block;
+                width: 100%;
+                position: absolute;
+                bottom: 10rem;
+            }
+        }
+    }
+
+    .logo {
+        width: 50vw;
+        position: absolute;
+        z-index: 1;
+        top: 10rem;
+        left: 50%;
+        transform: translateX(-50%);
+
+        svg {
+            width: 100%;
+            height: auto;
+
+            * {
+                fill: $color-white;
+            }
+        }
+    }
 }
