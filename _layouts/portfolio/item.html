@@ -12,20 +12,21 @@
 
 			<main class="page-content">
 
+				<!-- TODO install https://github.com/robwierzbowski/jekyll-picture-tag#presets -->
 				{% include components/swiper.html %}
 
 				<article class="portfolio-text">
 					<header>
 						<h1 class="portfolio-header">{{ page.title }}</h1>
 
+						<!-- TODO: fix meta component -->
 						{% include components/meta.html %}
 					</header>
 
 				    {{ content }}
 
-					<span class="portfolio-back">
-						<a href="/{{ page.parent }}"> Back to Portfolio</a>
-					</span>
+					<a class="back-link" href="/{{ page.parent }}"> Back to {{ page.parent }}</a>
+
 				</article>
 
 			</main>
