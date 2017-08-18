@@ -16,19 +16,27 @@ $gradient: darken($color, 0) 0%, darken($color, 0) $percentage;
     $gradient: $gradient, $darken $currentPercentage, $darken $nextPercentage;
 }
 
-.site.error404 {
+body.error404 {
     display: flex;
     flex-direction: column;
     height: 100vh;
 
+    .site-wrap {
+        height: 100vh;
+    }
+
+    .site {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
     .header {
-        .header--main, .header--post {
-            display: none;
-        }
+        display: none;
     }
 
     .footer {
-        .footer--pre, .footer--main {
+        .footer-pre, .footer-main {
             display: none;
         }
     }
@@ -56,6 +64,7 @@ $gradient: darken($color, 0) 0%, darken($color, 0) $percentage;
             margin-bottom: 2*$spacing;
             text-align: center;
             font-size: 3em;
+            line-height: 1.25em;
             position: relative;
             z-index: 10;
             display: flex;
@@ -101,6 +110,11 @@ $gradient: darken($color, 0) 0%, darken($color, 0) $percentage;
 
                 @include tablet-break {
                     padding: 0 1.5*$spacing 0 0;
+                    margin-bottom: $spacing/2;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
                 }
 
                 a {
