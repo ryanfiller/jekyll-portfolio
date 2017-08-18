@@ -17,13 +17,23 @@ body.homepage {
         flex: 1;
         display: flex;
 
+        @include tablet-break {
+            flex-direction: column;
+        }
+
         div {
             flex: 1;
             position: relative;
 
-            &:nth-child(1) {background-color:navy;}
+            @include tablet-break {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            &:nth-child(1) {background-color:deepskyblue;}
             &:nth-child(2) {background-color:lime;}
-            &:nth-child(3) {background-color:purple;}
+            &:nth-child(3) {background-color:indigo;}
 
             a {
                 color: $color-white;
@@ -36,6 +46,10 @@ body.homepage {
                 width: 100%;
                 position: absolute;
                 bottom: 10rem;
+
+                @include tablet-break {
+                    position: initial;
+                }
             }
         }
     }
@@ -49,12 +63,27 @@ body.homepage {
         transform: translateX(-50%);
 
         svg {
+            display: block;
             width: 100%;
             height: auto;
 
             * {
                 fill: $color-white;
             }
+
+            @include tablet-break {
+                height: auto;
+                width: 50%;
+                margin: 0 auto;
+            }
+        }
+
+        @include tablet-break {
+            transform: none;
+            position: initial;
+            width: 100%;
+            padding: 2rem;
+            background-color: $color-black;
         }
     }
 }
