@@ -19,7 +19,7 @@
 	            <div class="portfolio-grid">
 	                {% for work in site.portfolio %}
 	                    {% if work.tags contains page.filter %}
-	                        {% include components/grid-block.html %}
+	                        {% include components/portfolio-block.html %}
 	                    {% endif %}
 	                {% endfor %}
 	            </div>

@@ -3,6 +3,7 @@
     @include readable;
     font-size: 1.5rem;
     margin-bottom: $spacing;
+    position: relative;
 
     &__title {
         display: none;
@@ -42,6 +43,17 @@
         margin: 0;
         padding: 0;
         display: flex;
+
+        @include tablet-break {
+            position: absolute;
+            width: calc(100% - 4rem);
+            z-index: 5;
+        }
+
+        @include phone-break {
+            position: relative;
+            width: 100%;
+        }
     }
 
     &__link {
@@ -70,7 +82,7 @@
 
     @include tablet-break {
 
-        max-width: 50%;
+        width: 50%;
 
         &__title {
             display: flex;
@@ -88,6 +100,6 @@
     }
 
     @include phone-break {
-        max-width: 100%;
+        width: 100%;
     }
 }

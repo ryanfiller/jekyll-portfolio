@@ -10,7 +10,7 @@
         bottom: 0;
         left: 0;
         z-index: 1;
-        opacity: .5;
+        opacity: .66;
     }
 
     .portfolio-block__info {
@@ -48,12 +48,17 @@
         display: flex;
         align-items: flex-end;
         justify-content: center;
-        @include font-condensed;
-        color: $color-white;
-        text-align: center;
-        @include font-size(3.5em, 3.25em, 3em);
-        margin: 0;
         padding-bottom: $spacing;
+
+        h2 {
+            @include font-condensed;
+            color: $color-white;
+            font-weight: 300;
+            text-align: center;
+            @include font-size(3.5em, 3.25em, 3em);
+            line-height: 1em;
+            margin: 0;
+        }
     }
 
     &__hidden {
@@ -64,6 +69,10 @@
     .meta {
         display: block;
         margin-bottom: $spacing/2;
+
+        body.portfolio-list-filtered & {
+            display: none;
+        }
     }
 
     &__link {
