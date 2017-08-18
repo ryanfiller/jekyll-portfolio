@@ -10,19 +10,24 @@
 
 			{% include components/layout/header.html %}
 
-			{% include components/swiper.html %}
+			<main class="page-content">
 
-			<main class="page-content portfolio-detail">
-				<div class="portfolio__header">
-					<h1 class="portfolio__h1">{{ page.title }}</h1>
+				{% include components/swiper.html %}
 
-					{% include components/meta.html %}
-				</div>
+				<article class="portfolio-text">
+					<header>
+						<h1 class="portfolio-header">{{ page.title }}</h1>
 
-			    {{ content }}
-				<span class="back__link">
-					<a href="/{{ page.parent }}"> Back to Portfolio</a>
-				</span>
+						{% include components/meta.html %}
+					</header>
+
+				    {{ content }}
+
+					<span class="portfolio-back">
+						<a href="/{{ page.parent }}"> Back to Portfolio</a>
+					</span>
+				</article>
+
 			</main>
 
 			{% include components/layout/footer.html %}
