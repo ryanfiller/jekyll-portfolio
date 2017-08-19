@@ -9,10 +9,10 @@ gif-video: /assets/images/portfolio/??/gif-video
 thumbnail: /assets/images/site-assets/placeholder-thumb.jpg
 slides:
     # - alt text, desktop, [tablet], [phone]
-    - https://media.giphy.com/media/Gi7eBuLHjqCru/giphy.gif
-    - https://media.giphy.com/media/kcnvITNDYaaas/giphy.gif
-    - https://media.giphy.com/media/Gi7eBuLHjqCru/giphy.gif
-    - https://media.giphy.com/media/kcnvITNDYaaas/giphy.gif
+    - gif, https://media.giphy.com/media/Gi7eBuLHjqCru/giphy.gif
+    - gif, https://media.giphy.com/media/kcnvITNDYaaas/giphy.gif
+    - gif, https://media.giphy.com/media/Gi7eBuLHjqCru/giphy.gif
+    - gif, https://media.giphy.com/media/kcnvITNDYaaas/giphy.gif
 
 published: false
 ---
@@ -46,5 +46,7 @@ Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Etiam porta sem ma
 ##### H5 header
 
 ###### H6 header
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/375ENQbru8s" frameborder="0" allowfullscreen></iframe>
 
 > Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod. Vestibulum id ligula porta felis euismod semper. Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus.

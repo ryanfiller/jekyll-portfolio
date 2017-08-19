@@ -1,21 +1,16 @@
 <section class="portfolio-swiper {% if page.slides.size > 1 %}swiper-container{% endif %}" style="background-color:#{{ page.brand-color }};">
 	<div class="swiper-wrapper">
-			<!-- {% for image in page.slides %}
-				<picture class="swiper-slide" style="background-image: url('{{ image }}');">
-					<source media="(min-width: 650px)" srcset="{{ image }}" background-image: blue;>
-					<source media="(min-width: 465px)" srcset="{{ image }}" background-image: red;>
-					<img src="{{ image }}" alt="Flowers">
-				</picture>
-			{% endfor %} -->
-			{% for slide in page.testarray %}
+			{% for slide in page.slides %}
 
-				{% assign image =  slide | split: ',' %}
+				{% assign image =  slide | remove: ' ' | split: ',' %}
+
+				{% capture image-root %}/assets/images/portfolio/{{ page.title | downcase | replace: ' ', '-'}}/{% endcapture %}
 
 				<picture class="swiper-slide">
-					<div class="fallback" style="background-image: url('{{ image[1] }}');"></div>
-					<source media="(max-width: 667px)" srcset="{{ image[3] }}">
-					<source media="(max-width: 1349px)" srcset="{{ image[2] }}">
-					<img src="{{ image[1] }}" alt="{{ image[0] }}">
+					<div class="fallback" style="background-image: url('{{ image-root }}{{ image[1] }}');"></div>
+					<source media="(max-width: 667px)" srcset="{{ image-root }}{{ image[3] }}">
+					<source media="(max-width: 1349px)" srcset="{{ image-root }}{{ image[2] }}">
+					<img src="{{ image-root }}{{ image[1] }}" alt="{{ image[0] }}">
 				</picture>
 
 			{% endfor %}

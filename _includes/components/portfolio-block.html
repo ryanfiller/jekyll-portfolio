@@ -1,8 +1,10 @@
+{% capture image-root %}/assets/images/portfolio/{{ work.title | downcase | replace: ' ', '-'}}/{% endcapture %}
+
 <a class="portfolio-block" href="{{ work.url }}"
     {% if site.portfolio-layout == "gifs" %}
-        style="background-image:url({{ work.gif-thumbnail }});"
+        style="background-image:url({{ image-root}}{{ work.gif-thumbnail }});"
     {% else %}
-        style="background-image:url({{ work.thumbnail }});"
+        style="background-image:url({{ image-root}}{{ work.thumbnail }});"
     {% endif %}>
 
     <div class="portfolio-block__info">
@@ -20,8 +22,8 @@
 
     {% if site.portfolio-layout == "gifs" %}
         <video loop="loop" class="video">
-            <!-- <source src="{{ work.gif-video }}.mp4" type="video/mp4"> -->
-            <!-- <source src="mov_bbb.ogg" type="video/ogg"> -->
+            <source src="{{ image-root}}{{ work.gif-video }}.mp4" type="video/mp4">
+            <!-- <source src="{{ image-root}}{{ work.gif-video }}.ogg" type="video/ogg"> -->
             Your browser does not support HTML5 video.
         </video>
     {% endif %}
