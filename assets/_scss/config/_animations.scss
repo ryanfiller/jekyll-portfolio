@@ -93,7 +93,8 @@ svg, svg * {
 }
 
 @mixin float {
-    transform: translateY(-2px);
+    position: relative;
+    top: -1px;
     transition: $transition;
 }
 
