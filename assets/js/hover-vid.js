@@ -1,5 +1,5 @@
 (function hoverVid($) {
-    var block = $('.portfolio-grid-block');
+    var block = $('.portfolio-block');
     var video = $('.video');
 
     function play () {
