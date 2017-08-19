@@ -14,11 +14,12 @@ body.portfolio-item {
 
         @include desktop-break {
             display: flex;
-            height: 95vh;
+            height: 50vw;
             position: relative;
 
             .portfolio-swiper {
                 width: 50%;
+                height: 50vw;
                 position: relative;
                 z-index: 3;
             }
@@ -44,6 +45,15 @@ body.portfolio-item {
 
             .portfolio-header {
                 padding-top: 10rem;
+            }
+        }
+
+        .portfolio-swiper {
+            width: 100vw;
+            height: 56.25vw;
+
+            @include phone-break {
+                height: 177.77vw;
             }
         }
 
