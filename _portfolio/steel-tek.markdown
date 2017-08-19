@@ -5,15 +5,15 @@ tags:
     - design
     - dev
 client-link: steel-tek.com
-gif-thumbnail: /assets/images/portfolio/steel-tek/gif-thumb.jpg
-gif-video: /assets/images/portfolio/steel-tek/gif-video
-thumbnail: /assets/images/portfolio/steel-tek/thumbnail-500x500-2.jpg
+gif-thumbnail: gif-thumb.jpg
+gif-video: gif-video
+thumbnail: thumbnail-500x500-2.jpg
 brand-color: 56c6d0
 slides:
-    - /assets/images/portfolio/steel-tek/slider-desktop.png
-    - /assets/images/portfolio/steel-tek/slider-tablet.png
-    - /assets/images/portfolio/steel-tek/slider-mobile.png
-    - /assets/images/portfolio/steel-tek/slider-social.png
+    - stuff, slider-desktop.png, slider-desktop.png, slider-desktop.png
+    - stuff, slider-tablet.png, slider-desktop.png, slider-desktop.png
+    - stuff, slider-mobile.png, slider-desktop.png, slider-desktop.png
+    - stuff, slider-social.png, slider-desktop.png, slider-desktop.png
 
 ---
 
@@ -21,7 +21,7 @@ Steel•Tek, a sub-brand of [B&K Industries](http://www.bkproducts.com/), is a p
 
 ## Pinterest Feel for a Construction Audience
 
-![](/assets/images/portfolio/steel-tek/wireframes-homepage.jpg ){:class="left"}
+![](wireframes-homepage.jpg ){:class="left"}
 RocketFuel was also completing a branding project for B&K Industries along side the Steel•Tek website, and because of my extensive experience doing DIY pluming on my aquarium I was chosen to represent the creative team during most of the client communications. During our initial kick-off meetings the client communicated that they wanted to strike a balance between appealing to the "Pinterst" user who might be browsing the internet for trendy project to complete at home and a more typical contractor who might be looking for an easy way to add a fence or a railing to a project.
 We decided to go in two directions for our homepages designs, one highlighting the idea of user submitted project blogs, and a more traditional layout that emphasized the list of parts used in construction.
 
@@ -32,7 +32,7 @@ With the goal of simplifying the process of handing off a project from the desig
 
 ## Marketing a Cool New Site After You Make It
 
-![](/assets/images/portfolio/steel-tek/facebook-phones.png ){:class="right"}
+![](facebook-phones.png ){:class="right"}
 We also helped Steel•Tek set up a social media marketing plan, to which my contribution was a series of Facebook, Twitter, and Instagram templates they could use to market future projects to home DIY-ers. These templates gave them a quick way to start posting projects as well as an easy way to stay on brand as their social media following grew.
 
 This site won a Silver Addy from the [Memphis AAF](http://youcoulduseawin.com/) in the category of Consumer Website Design.
