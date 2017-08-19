@@ -1,15 +1,15 @@
 <section class="meta">
     <span class="meta__date">{{ post.date | date: "%b %d, %Y" }}{{ page.date | date: "%b %d, %Y" }}</span>
     {% for tag in post.tags %}
-            <span class="meta__tag">#{{ tag }}</span>
+        <span class="meta__tag">#{{ tag }}</span>
     {% endfor %}
     {% for tag in page.tags %}
-            <span class="meta__tag">#{{ tag }}</span>
+        <span class="meta__tag">#{{ tag }}</span>
     {% endfor %}
     {% for tag in work.tags %}
-            <span class="meta__tag">#{{ tag }}</span>
+        <span class="meta__tag">#{{ tag }}</span>
     {% endfor %}
     {% for link in page.client-link%}
-            <a class="meta__link" href="http://{{ link }}/" target="_blank">{{ link }}</a>
+        <a class="meta__link" href="http://{{ link }}/" target="_blank">{{ link }}</a>
     {% endfor %}
 </section>

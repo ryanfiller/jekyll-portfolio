@@ -41,6 +41,10 @@ body.portfolio-item {
                 background: linear-gradient(to top, $color-white, transparent);
                 pointer-events: none;
             }
+
+            .portfolio-header {
+                padding-top: 10rem;
+            }
         }
 
         header {
