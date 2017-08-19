@@ -8,6 +8,7 @@ gif-thumbnail: /assets/images/portfolio/??/gif-thumb.jpg
 gif-video: /assets/images/portfolio/??/gif-video
 thumbnail: /assets/images/site-assets/placeholder-thumb.jpg
 slides:
+    # - alt text, desktop, [tablet], [phone]
     - https://media.giphy.com/media/Gi7eBuLHjqCru/giphy.gif
     - https://media.giphy.com/media/kcnvITNDYaaas/giphy.gif
     - https://media.giphy.com/media/Gi7eBuLHjqCru/giphy.gif

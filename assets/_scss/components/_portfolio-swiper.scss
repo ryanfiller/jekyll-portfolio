@@ -12,16 +12,29 @@
             height: 100%;
             width: 100%;
             padding: 2rem;
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: center center;
+            position: relative;
+
+            .fallback {
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center center;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+            }
 
             img {
                 display: none;
             }
 
             @supports(object-fit: contain) {
-                background-image: none !important;
+
+                .fallback {
+                    background-image: none !important;
+                }
+
                 display: flex;
                 justify-content: center;
                 align-items: center;
