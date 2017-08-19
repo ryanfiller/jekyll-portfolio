@@ -3,6 +3,15 @@ body.portfolio-item {
         padding: 0;
         max-width: 100%;
 
+        .portfolio-swiper {
+            width: 100vw;
+            height: 56.25vw;
+
+            @include phone-break {
+                height: 177.77vw;
+            }
+        }
+
         .portfolio-text {
             position: relative;
             background: $color-white;
@@ -45,15 +54,6 @@ body.portfolio-item {
 
             .portfolio-header {
                 padding-top: 10rem;
-            }
-        }
-
-        .portfolio-swiper {
-            width: 100vw;
-            height: 56.25vw;
-
-            @include phone-break {
-                height: 177.77vw;
             }
         }
 
