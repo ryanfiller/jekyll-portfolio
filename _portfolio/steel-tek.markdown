@@ -10,10 +10,10 @@ gif-video: gif-video
 thumbnail: thumbnail-500x500-2.jpg
 brand-color: 56c6d0
 slides:
-    - stuff, slider-desktop.png, slider-desktop.png, slider-desktop.png
-    - stuff, slider-tablet.png, slider-desktop.png, slider-desktop.png
-    - stuff, slider-mobile.png, slider-desktop.png, slider-desktop.png
-    - stuff, slider-social.png, slider-desktop.png, slider-desktop.png
+    - Home and Blog Screens, desktop-split.png, desktop-horizontal.png, desktop-vertical.png
+    - Project Screens, tablet-split.png, tablet-horizontal.png, tablet-vertical.png
+    - Project Screens, mobile-split.png, mobile-horizontal.png, mobile-vertical.png
+    - Social Media Examles, socials-split.png, socials-horizontal.png, socials-vertical.png
 
 ---
 
