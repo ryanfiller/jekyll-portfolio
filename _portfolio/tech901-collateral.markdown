@@ -11,8 +11,7 @@ slides:
     - stuff, slider-tshirt.png, slider-tshirt.png, slider-tshirt.png
     - stuff, slider-artwork.jpg, slider-tshirt.png, slider-tshirt.png
     - stuff, slider-emails.png, slider-tshirt.png, slider-tshirt.png
-    published: false
-
+published: false
 ---
 
 Tech901 is a nonprofit organization building the Memphis technology job base by training new tech workers to take on the diverse challenges of the IT industry and providing growth resources for local employers.
