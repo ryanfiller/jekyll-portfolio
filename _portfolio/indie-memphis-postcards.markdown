@@ -12,7 +12,7 @@ slides:
     - alt, slider-front.png, slider-front.png, slider-front.png
     - alt, slider-front-back.png, slider-front-back.png, slider-front-back.png
     - alt, slider-series.png, slider-series.png, slider-series.png
-
+published: false
 ---
 
 These were like, for RocketFuel? But we put them at Indie Memphis?

@@ -11,6 +11,7 @@ slides:
     - stuff, slider-tshirt.png, slider-tshirt.png, slider-tshirt.png
     - stuff, slider-artwork.jpg, slider-tshirt.png, slider-tshirt.png
     - stuff, slider-emails.png, slider-tshirt.png, slider-tshirt.png
+    published: false
 
 ---
 

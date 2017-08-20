@@ -13,6 +13,7 @@ slides:
     - alt, slider-shirt.png, slider-shirt.png, slider-shirt.png
     - alt, slider-design.jpg, slider-design.jpg, slider-design.jpg
     - alt, slider-design-2.jpg, slider-design-2.jpg, slider-design-2.jpg
+published: false
 ---
 
 t-shirt design
