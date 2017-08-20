@@ -9,7 +9,6 @@
     {% for tag in work.tags %}
         <span class="meta__tag">#{{ tag }}</span>
     {% endfor %}
-    {% for link in page.client-link%}
-        <a class="meta__link" href="http://{{ link }}/" target="_blank">{{ link }}</a>
-    {% endfor %}
+    {% assign link =  page.client-link | remove: ' ' | split: ',' %}
+        <a class="meta__link" href="{{ link[1] }}" target="_blank">{{ link[0] }}</a>
 </section>

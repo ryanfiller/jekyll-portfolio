@@ -4,7 +4,7 @@ title:  Steel-Tek
 tags:
     - design
     - dev
-client-link: steel-tek.com
+client-link: steel-tek.com, http://www.steel-tek.com
 gif-thumbnail: gif-thumb.jpg
 gif-video: gif-video
 thumbnail: thumbnail-500x500-2.jpg
