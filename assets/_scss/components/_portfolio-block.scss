@@ -4,6 +4,7 @@
         content: '';
         display: block;
         @include pixels;
+        background-color: transparentize($color-blue, .25);
         position: absolute;
         top: 0;
         right: 0;
