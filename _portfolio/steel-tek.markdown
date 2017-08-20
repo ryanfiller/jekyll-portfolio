@@ -17,22 +17,28 @@ slides:
 
 ---
 
-Steel•Tek, a sub-brand of [B&K Industries](http://www.bkproducts.com/), is a product line that specialized in push-fit metal plumbing products, specifically aimed at people interested in using them for components of DIY construction products at home.
+Steel•Tek is a subsidy of [B&K Industries](http://www.bkproducts.com/){:target="_blank"} that specializes in non-threaded, push fit plumbing parts. Unlike most B&K products, Steel•Tek pipes are made as compenents for home DIY construction rather than traditional plumbing.
 
-## Pinterest Feel for a Construction Audience
+## Going After the "Pinterest Audience"
 
-![](/assets/images/portfolio/steel-tek/wireframes-homepage.jpg ){:class="left"}
-RocketFuel was also completing a branding project for B&K Industries along side the Steel•Tek website, and because of my extensive experience doing DIY pluming on my aquarium I was chosen to represent the creative team during most of the client communications. During our initial kick-off meetings the client communicated that they wanted to strike a balance between appealing to the "Pinterst" user who might be browsing the internet for trendy project to complete at home and a more typical contractor who might be looking for an easy way to add a fence or a railing to a project.
-We decided to go in two directions for our homepages designs, one highlighting the idea of user submitted project blogs, and a more traditional layout that emphasized the list of parts used in construction.
+![wireframes](/assets/images/portfolio/steel-tek/wireframes-homepage.jpg ){:class="right"}
 
-With the goal of simplifying the process of handing off a project from the design team to the dev team, this project was the first at RocketFuel to utilize an interactive style tile using [Corkscrew](http://acme.ftsdev.com/styleguide/templates). Using this system, I was able to make several static html components that the dev team could plug into our CMS. This also let me focus on fine-tuning some of the more complex interactions we designed for the site.
+[RocketFuel](http://www.gorocketfuel.com/work/steeltek/){:target="_blank"} was approached by the client soon after this sub-brand was started by B&K, and was tasked with coming up with what the client viewed as a non-traditional plumbing site. Rather than targeting contractors and construction purchasers as usual, the new Steel•Tek site need to target a younger audience who might be more comfortable surfing Pinterest to find trendy home DIY projects. We decided to go in two directions for our homepages designs, one highlighting the idea of user submitted project blogs, and a more traditional layout that emphasized project part lists and instructions.
+
+![desktop comps](/assets/images/portfolio/steel-tek/comps.png ){:class="full"}
+
+Our final designs went in the direction of highlighting the simplicity of the parts themselves, but still with with a large homepage callout and robust interior section focusing on projects. During the mobile development phase of this project special care was taken with the project pages to make sure that anyone could easily access a parts list while using their phone in a hardware store, or take assembly instructions anywhere with them.
+
+## Interaction Design
+
+This project was the first at RocketFuel to utilize an interactive style tile using [Corkscrew](http://acme.ftsdev.com/styleguide/templates){:target="_blank"}. With this system I was able to make several static html components that the dev team could plug into our CMS. This also let me focus on fine-tuning some of the more complex interactions we designed for the site and how they would work with client editable content.
 
 <p data-height="500" data-theme-id="0" data-slug-hash="qrpXBO" data-default-tab="result" data-user="ryanfiller89" data-embed-version="2" data-pen-title="qrpXBO" class="codepen">See the Pen <a href="http://codepen.io/ryanfiller89/pen/qrpXBO/">qrpXBO</a> by Ryan Filler (<a href="http://codepen.io/ryanfiller89">@ryanfiller89</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
-## Marketing a Cool New Site After You Make It
+## Marketing to Millenials
 
-![](/assets/images/portfolio/steel-tek/facebook-phones.png ){:class="right"}
-We also helped Steel•Tek set up a social media marketing plan, to which my contribution was a series of Facebook, Twitter, and Instagram templates they could use to market future projects to home DIY-ers. These templates gave them a quick way to start posting projects as well as an easy way to stay on brand as their social media following grew.
+![](/assets/images/portfolio/steel-tek/facebook-phones.png ){:class="left"}
+RocketFuel also helped Steel•Tek set up a social media marketing plan. This meant providing their team with a series of templates that could be used to create posts on Facebook, Twitter, Instagram, and Pinterest. These templates gave them a quick way to start posting projects and reaching DIYers as well as an easy way to stay on brand as their social media following grew.
 
-This site won a Silver Addy from the [Memphis AAF](http://youcoulduseawin.com/) in the category of Consumer Website Design.
+This site won a Silver Addy from the [Memphis AAF](http://youcoulduseawin.com/){:target="_blank"} in the category of Consumer Website Design.
