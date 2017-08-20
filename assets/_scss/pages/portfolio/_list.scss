@@ -7,6 +7,7 @@ body.portfolio-list, body.portfolio-list-filtered {
     .portfolio-grid {
         display: flex;
         flex-wrap: wrap;
+        background-color: $color-blue;
 
         .portfolio-block {
             width: 33.33333%;
