@@ -12,29 +12,6 @@ body.page, body.portfolio-item {
             margin: 0;
             margin-bottom: $spacing;
 
-            a {
-                color: $color-black;
-                text-decoration: none;
-                border-bottom: 2px $color-orange dotted;
-
-                &:hover {
-                    color: $color-blue;
-                    border-bottom: 2px $color-blue dotted;
-                }
-
-                @include tablet-break {
-                    border-bottom: 0;
-                    background: $color-orange;
-                    padding: 0 .25em;
-                    color: $color-white;
-                    &:hover {
-                        border-bottom: 0;
-                        background-color: $color-blue;
-                        color: $color-white;
-                    }
-                }
-            }
-
             img.none {
                 display: block;
                 margin: 0 auto;
@@ -68,25 +45,6 @@ body.page, body.portfolio-item {
                     height: auto;
                     margin: 0 -1*$spacing $spacing -1*$spacing;
                 }
-            }
-        }
-
-        blockquote {
-            font-size: 1.25em;
-            border-left: 1.5em solid $color-blue;
-            padding-left: .5em;
-            margin: $spacing 2em $spacing 0;
-            position: relative;
-
-            &:before {
-                content: '\201C';
-                @include font-condensed;
-                color: $color-white;
-                position: absolute;
-                font-size: 4em;
-                top: 0.5em;
-                left: -0.33em;
-                line-height: 0;
             }
         }
 
