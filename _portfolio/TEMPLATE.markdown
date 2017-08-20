@@ -1,18 +1,16 @@
 ---
 layout: portfolio/item
 title:  test
-category: ??
-tags: tag1 tag2
-client-link: www.google.com
-gif-thumbnail: /assets/images/portfolio/??/gif-thumb.jpg
-gif-video: /assets/images/portfolio/??/gif-video
-thumbnail: /assets/images/site-assets/placeholder-thumb.jpg
+tags:
+    - tag1
+    - tag2
+client-link: short-title, http://www.long-title.com
+gif-thumbnail: gif-thumb
+gif-video: gif-video
+thumbnail:
+brand-color: no#
 slides:
     # - alt text, desktop, [tablet], [phone]
-    - gif, https://media.giphy.com/media/Gi7eBuLHjqCru/giphy.gif
-    - gif, https://media.giphy.com/media/kcnvITNDYaaas/giphy.gif
-    - gif, https://media.giphy.com/media/Gi7eBuLHjqCru/giphy.gif
-    - gif, https://media.giphy.com/media/kcnvITNDYaaas/giphy.gif
 
 published: false
 ---
