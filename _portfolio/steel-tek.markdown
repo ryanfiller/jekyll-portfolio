@@ -7,6 +7,7 @@ tags:
 client-link: steel-tek.com, http://www.steel-tek.com
 gif-thumbnail: gif-thumb.jpg
 gif-video: gif-video
+gif-attribution: Microsoft Windows '98
 thumbnail: thumbnail-500x500-2.jpg
 brand-color: 56c6d0
 slides:

@@ -7,6 +7,7 @@ tags:
 client-link: short-title, http://www.long-title.com
 gif-thumbnail: gif-thumb
 gif-video: gif-video
+gif-attribution: words, can have commas
 thumbnail:
 brand-color: no#
 slides:

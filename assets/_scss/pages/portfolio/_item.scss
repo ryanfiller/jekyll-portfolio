@@ -109,5 +109,12 @@ body.portfolio-item {
                 margin-top: 2rem;
             }
         }
+
+        .thumbnail-credit {
+            display: block;
+            text-align: center;
+            font-size: .75em;
+            color: $color-light-gray;
+        }
     }
 }
