@@ -4,14 +4,16 @@ title:  Tech901 Collateral
 tags:
     - design
     - draw
-client-link: tech901.org
+client-link: tech901.org, http://www.tech901.org
 thumbnail: thumbnail-500x500-2.jpg
+gif-thumbnail: martix-thumb
+gif-video: matrix
+gif-attribution: Brent Moore, Warner Bros.
 brand-color: 82be42
 slides:
     - stuff, slider-tshirt.png, slider-tshirt.png, slider-tshirt.png
     - stuff, slider-artwork.jpg, slider-tshirt.png, slider-tshirt.png
     - stuff, slider-emails.png, slider-tshirt.png, slider-tshirt.png
-published: false
 ---
 
 Tech901 is a nonprofit organization building the Memphis technology job base by training new tech workers to take on the diverse challenges of the IT industry and providing growth resources for local employers.
