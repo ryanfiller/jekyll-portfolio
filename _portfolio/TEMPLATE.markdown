@@ -1,6 +1,7 @@
 ---
 layout: portfolio/item
 title:  test
+logo: logo.svg
 tags:
     - tag1
     - tag2

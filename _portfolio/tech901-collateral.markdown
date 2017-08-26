@@ -1,6 +1,7 @@
 ---
 layout: portfolio/item
 title:  Tech901 Collateral
+logo: tech901.svg
 tags:
     - design
     - draw

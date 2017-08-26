@@ -1,9 +1,13 @@
 ---
 layout: portfolio/item
 title:  Steel-Tek
+logo: steel-tek.svg
 tags:
     - design
     - dev
+secondary-tags:
+    - art direction
+    - interaction design
 client-link: steel-tek.com, http://www.steel-tek.com
 thumbnail: thumbnail-500x500.jpg
 brand-color: 56c6d0
