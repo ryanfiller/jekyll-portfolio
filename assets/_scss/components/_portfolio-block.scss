@@ -78,14 +78,6 @@
         font-size: 1.25em;
         display: block;
         margin-bottom: $spacing/2;
-
-        &__date {
-            display: none;
-        }
-
-        body.portfolio-list-filtered & {
-            display: none;
-        }
     }
 
     &__link {
