@@ -1,7 +1,6 @@
 ---
 layout: portfolio/item
 title:  Indie Memphis Postcards
-# logo: indie-memphis-white.svg
 logo: indie-memphis.svg
 tags:
     - draw
@@ -12,82 +11,25 @@ client-link: indiememphis.com
 thumbnail: thumbnail-500x500.jpg
 brand-color: EE1C25
 slides:
-    - alt, slider-front.png, slider-front.png, slider-front.png
-    - alt, slider-front-back.png, slider-front-back.png, slider-front-back.png
-    - alt, slider-series.png, slider-series.png, slider-series.png
+    - postcard front, front.png, front.png, front.png
+    - postcard back, front-back-split.png, front-back-horizontal.png, front-back-vertical.png
 ---
 
-Indie Memphis is a local organization that hosts a yearly independant film festival.
+Indie Memphis is a local organization that hosts a several independant film festivals throughout the year. For their fall 2016 festival, RocketFuel exchanged a sponsorhip for the opportunity to created a series of leave-behinds in the form of postcards. To match the theme of "Film for All," the theme of the postcards was to choose from a long lineage of film history.
 
+## A Shoutout to Film History
 
-So I know we did them to promote the 2016 Film Fest, but where did the theme come from?
+![inspirtation boards](/assets/images/portfolio/indie-memphis-postcards/mood-board.jpg){:class="full"}
 
+![inking timelapse](/assets/images/portfolio/indie-memphis-postcards/inking.gif){:class="left"}
+We decided on three postcards with each designer pulling from a differnet section of B movie history. My postcard focused on the trope of "man vs monster," and pulled inpiration from illustrated monster movie posters going back to the 1950's.
 
-[1:26]
-Was the sci-fi thing just because they were to promote rocketfuel or did that tie into the festival somehow?
+My postcard combined traditionally inked illustrations on bristol board that were scanned and then colored digitally in Photoshop. Some of the darker areas were ink washed in several semi transparent layers to give an underwater effect.
 
+![photoshop coloring](/assets/images/portfolio/indie-memphis-postcards/coloring.gif){:class="full"}
 
-butler
-[1:28 PM]
-both, cuz you know we’re good like that
+## Working Within a Series
 
-the spacey/sci-fi themes fit in with our brand persona, and each one was modeled on a different classic B-movie genre (man vs. machine / perils of the deep / space exploration)
+Saturated colors were chosen as a refernece to the time period and inspiration images, but also to make sure they worked as a set with the other postcards being illustrated. In adition to sharing a bold, blueish color scheme, the series also shares a theme of anxiety – anxiety of emptyness, anxiety of the unknown, and anxiety of being misunderstood.
 
-
-[1:29]
-so, the subject matter gave people a view into our geeky/pop culture appreciation & the narratives we chose to focus on celebrated film culture/history
-
-
-[1:31]
-i hope that’s helpful!
-
-
-ryan
-[1:43 PM]
-that is helpful. were b movies a thing at this year’s festival or was it just to tie into the overall theme of films?
-
-
-butler
-[1:49 PM]
-there wasn’t any specific b-movie film theme. (the theme last year was suuuuuuuper generic: “film for all” :face_with_rolling_eyes:) i just saw that as a way to connect our brand persona to the film milieu
-
-
-ryan
-[1:50 PM]
-okay, cool. that helps.
-
-
-[1:50]
-Yeah, I tried googling last year to see if there way any info about a theme but that’s all I could find and there wasn’t a whole of info for what that even really meant.
-
-
-butler
-[1:52 PM]
-yeah, tbh, sullivan was way lazy last year with the festival branding. they just slapped a text framing element on top of some b&w photos
-
-
-[1:53]
-i get what they were going for with that tagline, trying to get across the point that indie memphis has inclusivity at the heart of its programming model, but i think they could’ve done it in a more stylish & specific way
-
-
-[1:54]
-the witz creative branding the year before that was sloppy & little goofy, but at least it had a very individual perspective
-
-
-
-rocketfuel was a sponsor in exchange for doing probono work, this was our leave behind
-
-These were like, for RocketFuel? But we put them at Indie Memphis?
-postcard design,
-videos / gifs
-
-mood board
-
-
-![](mood-board.jpg){:class="full"}
-
-design as a set
-
-<div class="videoWrapper">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/sIlNIVXpIns" frameborder="0" allowfullscreen></iframe>
-</div>
+![postcard series](/assets/images/portfolio/indie-memphis-postcards/postcard-series.png){:class="full"}

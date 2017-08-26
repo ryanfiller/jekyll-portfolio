@@ -5,6 +5,9 @@ logo: logo.svg
 tags:
     - tag1
     - tag2
+secondary-tags:
+    - inking
+    - digital coloring
 client-link: short-title, http://www.long-title.com
 gif-thumbnail: gif-thumb
 gif-video: gif-video
