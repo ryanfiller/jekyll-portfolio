@@ -22,7 +22,7 @@ Indie Memphis is a local organization that hosts a several independant film fest
 ![inspirtation boards](/assets/images/portfolio/indie-memphis-postcards/mood-board.jpg){:class="full"}
 
 ![inking timelapse](/assets/images/portfolio/indie-memphis-postcards/inking.gif){:class="left"}
-We decided on three postcards with each designer pulling from a differnet section of B movie history. My postcard focused on the trope of "man vs monster," and pulled inpiration from illustrated monster movie posters going back to the 1950's.
+We decided on three postcards with each designer pulling from a differnet section of B movie history. My postcard focused on the trope of "man vs monster," and pulled inpiration from illustrated monster movie posters going back to the 1950's. The font choices on the back of the card also reflected this time period.
 
 My postcard combined traditionally inked illustrations on bristol board that were scanned and then colored digitally in Photoshop. Some of the darker areas were ink washed in several semi transparent layers to give an underwater effect.
 
