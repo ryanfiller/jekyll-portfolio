@@ -23,12 +23,8 @@
 
 				    {{ content }}
 
-					<cite class="thumbnail-credit">Thumbnail gif credit: {{ page.gif-attribution }}</cite>
+					<a class="back-link" href="/{{ page.parent }}"> Back to {{ page.parent }}</a>
 
-					{% if site.portfolio-layout == "gifs" %}
-						<a class="back-link" href="/{{ page.parent }}"> Back to {{ page.parent }}</a>
-					{% endif %}
-					
 				</article>
 
 			</main>
