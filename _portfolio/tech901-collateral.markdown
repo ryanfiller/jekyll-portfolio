@@ -5,10 +5,7 @@ tags:
     - design
     - draw
 client-link: tech901.org, http://www.tech901.org
-thumbnail: thumbnail-500x500-2.jpg
-gif-thumbnail: martix-thumb
-gif-video: matrix
-gif-attribution: Brent Moore, Warner Bros.
+thumbnail: thumbnail-500x500-3.jpg
 brand-color: 82be42
 slides:
     - stuff, slider-tshirt.png, slider-tshirt.png, slider-tshirt.png

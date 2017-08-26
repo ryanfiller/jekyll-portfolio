@@ -3,8 +3,8 @@ layout: portfolio/item
 title:  Hack Memphis 2016
 tags:
     - design
-    - dev
-client-link: hackmemphis.com
+    - draw
+client-link: hackmemphis.com, http://www.hackmemphis.com
 gif-thumbnail: gif-thumb.jpg
 gif-video: gif-video
 thumbnail: thumbnail-500x500-2.jpg
