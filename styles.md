@@ -42,6 +42,12 @@ __Praesent commodo cursus magna, vel scelerisque nisl consectetur et.__
         max-width: 100%;
     }
 
+<figure class="compare left">
+    <img src="https://cdn.bulbagarden.net/upload/8/81/Spr_4d_065_m_s.png" alt="Siny Alakazam">
+    <img src="https://cdn.bulbagarden.net/upload/2/24/Spr_4d_065_m.png" alt="Alakazam">
+    <figcaption>Shiny Alakazam</figcaption>
+</figure>
+
 Vestibulum id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam quis risus eget urna mollis ornare vel eu leo. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum.
 
 <img src="https://placekitten.com/900/400">
