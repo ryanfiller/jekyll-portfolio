@@ -7,14 +7,14 @@
         style="background-image:url({{ image-root}}{{ work.thumbnail }});"
     {% endif %}>
 
-    <div class="portfolio-block__info">
+    <div class="portfolio-block__content">
 
-        <header class="portfolio-block__title">
+        <header class="portfolio-block__image">
             <img src="{{ image-root}}{{work.logo}}" alt="{{work.title}}">
         </header>
 
-        <main class="portfolio-block__hidden" >
-            <!-- <h2>{{work.title}}</h2> -->
+        <main class="portfolio-block__info" >
+            <h2>{{work.title}}</h2>
             {% include components/meta.html %}
             <span class="portfolio-block__link">Read More</span>
         </main>
