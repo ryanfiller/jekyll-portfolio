@@ -1,11 +1,6 @@
 {% capture image-root %}/assets/images/portfolio/{{ work.title | downcase | replace: ' ', '-'}}/{% endcapture %}
 
-<a class="portfolio-block" href="{{ work.url }}"
-    {% if site.portfolio-layout == "gifs" %}
-        style="background-image:url({{ image-root}}{{ work.gif-thumbnail }});"
-    {% else %}
-        style="background-image:url({{ image-root}}{{ work.thumbnail }});"
-    {% endif %}>
+<a class="portfolio-block" href="{{ work.url }}" style="background-image:url({{ image-root}}{{ work.thumbnail }});">
 
     <div class="portfolio-block__logo">
         <img src="{{ image-root}}{{work.logo}}" alt="{{work.title}}">
