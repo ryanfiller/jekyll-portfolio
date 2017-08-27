@@ -90,7 +90,7 @@
                     padding: $spacing/2;
                 }
 
-                &::after {
+                &:after {
                     content: ' ▸▸';
                 }
             }
@@ -101,7 +101,7 @@
             box-shadow: $shadow;
 
             .excerpt__header {
-                &::before {
+                &:before {
                     background-color: $color-orange;
                 }
 
@@ -154,7 +154,7 @@
                 justify-content: flex-end;
                 order: 1;
 
-                &::before, &::after {
+                &:before, &:after {
                     margin-right: $spacing/4;
                     order: -1;
                     transform:rotate(180deg)
@@ -173,7 +173,7 @@
                 order: 1;
                 justify-content: flex-start;
 
-                &::before, &::after {
+                &:before, &:after {
                     margin-left: $spacing/6;
                     order: 2;
                 }
@@ -196,7 +196,7 @@
                 align-items: center;
                 text-align: center;
 
-                &::before, &::after {
+                &:before, &:after {
                     content: '';
                     display: block;
                     text-shadow: $shadow;

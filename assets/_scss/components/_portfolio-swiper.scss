@@ -78,7 +78,7 @@
                     display: none;
                 }
 
-                &::before, &::after {
+                &:before, &:after {
                     content: '';
                     display: block;
                     text-shadow: $shadow;
@@ -91,14 +91,14 @@
                 }
 
                 &:hover {
-                    &::before, &::after {
+                    &:before, &:after {
                         @include float;
                     }
                 }
             }
 
             &-prev {
-                &::before, &::after {
+                &:before, &:after {
                     transform: rotate(180deg);
                 }
             }

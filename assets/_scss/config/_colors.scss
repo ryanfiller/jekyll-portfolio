@@ -24,7 +24,7 @@ $shadow-inset:
 
 @mixin image-overlay {
     position: relative;
-    &::before {
+    &:before {
         content: '';
         display: block;
         background-color: transparentize($color-dark-gray, .25);

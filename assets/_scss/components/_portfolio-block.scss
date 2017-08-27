@@ -1,21 +1,15 @@
 @mixin grid-block-active {
 
     &::before {
-        content: '';
-        display: block;
-        @include pixels;
-        background-color: transparentize($color-blue, .25);
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        z-index: 1;
         opacity: .66;
     }
 
-    .portfolio-block__info {
-        transform: translateY(0);
+    // .portfolio-block__info {
+    //     transform: translateY(0);
+    // }
+
+    .portfolio-block__hidden {
+        max-height: 100%;
     }
 }
 
@@ -37,7 +31,7 @@
         right: 0;
         bottom: 0;
         left: 0;
-        transform: translateY(33.33333%);
+        // transform: translateY(33.33333%);
         transition: $transition;
         display: flex;
         flex-direction: column;
@@ -47,9 +41,8 @@
     &__title {
         flex: 2;
         display: flex;
-        align-items: flex-end;
+        align-items: center;
         justify-content: center;
-        padding-bottom: $spacing;
 
         img {
             width: 100%;
@@ -70,14 +63,22 @@
     }
 
     &__hidden {
+        padding-top: $spacing;
         flex: 1;
         text-align: center;
+        max-height: 0;
+        overflow: hidden;
+        transition: 2*$transition;
     }
 
     .meta {
         font-size: 1.25em;
         display: block;
         margin-bottom: $spacing/2;
+
+        span {
+            display: inline-block;
+        }
     }
 
     &__link {
@@ -96,9 +97,19 @@
         }
     }
 
-    .video {
-        height: 100%;
-        width: auto;
+    &::before {
+        content: '';
+        display: block;
+        @include pixels;
+        background-color: transparentize($color-blue, .25);
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        opacity: 0;
+        transition: $transition;
     }
 
     &:hover {

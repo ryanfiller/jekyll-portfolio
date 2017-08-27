@@ -79,7 +79,7 @@ body.page, body.portfolio-item {
         text-transform: uppercase;
         text-decoration: none;
 
-        &::before{
+        &:before{
             content: ' ▸▸';
             display: inline-block;
             position: relative;
