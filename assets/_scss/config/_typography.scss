@@ -73,8 +73,38 @@ h4 {
     line-height: 1.5em;
 }
 
+
+ol {
+    list-style: none;
+    counter-reset: li;
+    li {
+        counter-increment: li;
+        &:before {
+            content: counter(li);
+            color: $color-blue;
+            position: relative;
+            left: -.5em;
+        }
+    }
+}
+
+ul {
+    list-style: none;
+    li {
+        &:before {
+            content: '\2022';
+            color: $color-blue;
+            position: relative;
+            left: -.5em;
+        }
+    }
+}
+
+
+
 blockquote {
     font-size: 1.25em;
+    line-height: 1.75em;
     border-left: 1.5em solid $color-blue;
     padding-left: .5em;
     margin: $spacing 2em $spacing 0;
