@@ -50,6 +50,32 @@ body {
             }
         }
     }
+
+    ol {
+        list-style: none;
+        counter-reset: li;
+        li {
+            counter-increment: li;
+            &:before {
+                content: counter(li);
+                color: $color-blue;
+                position: relative;
+                left: -.5em;
+            }
+        }
+    }
+
+    ul {
+        list-style: none;
+        li {
+            &:before {
+                content: '\2022';
+                color: $color-blue;
+                position: relative;
+                left: -.5em;
+            }
+        }
+    }
 }
 
 h2 {
@@ -72,35 +98,6 @@ h4 {
     font-size: 1.5em;
     line-height: 1.5em;
 }
-
-
-ol {
-    list-style: none;
-    counter-reset: li;
-    li {
-        counter-increment: li;
-        &:before {
-            content: counter(li);
-            color: $color-blue;
-            position: relative;
-            left: -.5em;
-        }
-    }
-}
-
-ul {
-    list-style: none;
-    li {
-        &:before {
-            content: '\2022';
-            color: $color-blue;
-            position: relative;
-            left: -.5em;
-        }
-    }
-}
-
-
 
 blockquote {
     font-size: 1.25em;
