@@ -85,16 +85,29 @@ body.page, body.portfolio-item {
                     opacity: 0;
                     transition: $transition;
                 }
+
+                &:last-child {
+                    opacity: 1;
+                    transition: $transition;
+                }
             }
 
             &:hover {
                 img {
-                    opacity: 1;
+
+                    &:first-child {
+                        opacity: 1;
+                    }
+
+                    &:last-child {
+                        opacity: 0;
+                    }
                 }
+
             }
 
             figcaption {
-                background-color: $color-light-gray;
+                background-color: $color-gray;
                 font-size: .75em;
                 padding: .125em;
                 text-align: center;

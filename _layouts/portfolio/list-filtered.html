@@ -12,9 +12,9 @@
 
 	        {% include components/banner.html %}
 
-	        <main class="page-content {{ page.layout | replace: '/', '-' }}">
+			{% include components/layout/subnav.html %}
 
-	            {% include components/layout/subnav.html %}
+	        <main class="page-content">
 
 	            <div class="portfolio-grid">
 	                {% for work in site.portfolio %}
