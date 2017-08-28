@@ -18,16 +18,24 @@ slides:
     - alt, slider-design-2.jpg, slider-design-2.jpg, slider-design-2.jpg
 ---
 
-![color options](/assets/images/portfolio/hack-memphis-2016/logo.png){:class="left small"}
+![color options](/assets/images/portfolio/hack-memphis-2016/logo.png){:class="right small"}
 HACKmemphis is is a yearly hackathon that takes place, sponsored mainly by the [Memphis Technology Foundation.](http://www.memphistechnology.org/){:target="_blank"} The event encourages developers, designers, and makers from all around the city to come together for a 3 day weekend of collaboration.
 
 Each year the organization reaches out to a different local artist to design an event shirt that emboies the spirit of the event.
+
+## Isometic Illustration
 
 For the 2016 shirt I decided on a deconstruction of the H logo with each of the ascenders of the letter representing a different aspect of the event. Clockwise starting in the top left, these are 3D printing, phycials construction, digital elements, and planning/modeling.
 
 ![geometry gif](/assets/images/portfolio/hack-memphis-2016/geometry.gif){:class="full"}
 
-Full video can be found [on Vimeo.](https://vimeo.com/231281744){:target="_blank"}
+More text here. Full video can be found [on Vimeo.](https://vimeo.com/231281744){:target="_blank"}
+
+color iterations
+
+![color options](/assets/images/portfolio/hack-memphis-2016/color-options.jpg){:class="full"}
+
+## Halftones for Two Color Screenprinting
 
 <figure class="compare left">
     <img src="/assets/images/portfolio/hack-memphis-2016/hover-screen-2.jpg" alt="color halftone">
@@ -35,7 +43,3 @@ Full video can be found [on Vimeo.](https://vimeo.com/231281744){:target="_blank
     <figcaption>Halftones</figcaption>
 </figure>
 Because the shirt needed to be printed in only two colors at Custom Ink, shades, gradients, and transparencies needed to be converted to halftones.
-
-iterations
-
-![color options](/assets/images/portfolio/hack-memphis-2016/color-options.jpg){:class="full"}

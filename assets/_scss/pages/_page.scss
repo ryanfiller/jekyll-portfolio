@@ -162,6 +162,7 @@ body.page, body.portfolio-item {
     }
 
     .back-link {
+        clear: both;
         font-size: 1em;
         margin: 0 auto;
         margin-top: 2*$spacing;
