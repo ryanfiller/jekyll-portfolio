@@ -122,6 +122,7 @@ body.page, body.portfolio-item {
                 height: auto;
                 margin: 0 -1*$spacing $spacing -1*$spacing;
                 display: flex;
+                flex-direction: row-reverse;
                 flex-wrap: wrap;
 
                 img, img:first-child {
@@ -129,7 +130,7 @@ body.page, body.portfolio-item {
                     width: 50%;
                     height: 50vw;
                     opacity: 1;
-                    transition: 0;
+                    transition: 0s;
                 }
 
                 figcaption {
