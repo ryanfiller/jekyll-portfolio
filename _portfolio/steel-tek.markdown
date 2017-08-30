@@ -19,7 +19,7 @@ slides:
 
 ---
 
-Steel•Tek is a subsidy of [B&K Industries](http://www.bkproducts.com/){:target="_blank"} that specializes in non-threaded, push fit plumbing parts. Unlike most B&K products, Steel•Tek pipes are made as compenents for home DIY construction rather than traditional plumbing.
+Steel•Tek is a subsidy of [B&K Industries](http://www.bkproducts.com/){:target="_blank"} that specializes in non-threaded, push fit plumbing parts. Unlike most B&K products, Steel•Tek pipes are made as components for home DIY construction rather than traditional plumbing.
 
 ## Going After the "Pinterest Audience"
 

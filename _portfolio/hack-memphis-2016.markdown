@@ -23,7 +23,7 @@ HACKmemphis is is a yearly hackathon sponsored mainly by the [Memphis Technology
 
 Each year the organization reaches out to a different local artist to design an event shirt that embodies the spirit of the event.
 
-## Isometic Illustration
+## Isometric Illustration
 
 For the 2016 shirt I decided on a deconstruction of the H logo with each of the ascenders of the letter representing a different aspect of the event. Ideas represented include layers reminiscent of 3D printing, blueprints for physical construction, a section dissolving into pixels to represent digital aspects, and an x-rayed section showing design insight.
 
