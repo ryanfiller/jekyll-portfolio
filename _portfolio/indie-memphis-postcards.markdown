@@ -15,7 +15,7 @@ slides:
     - postcard back, front-back-split.png, front-back-horizontal.png, front-back-vertical.png
 ---
 
-Indie Memphis is a local organization that hosts a several independant film festivals throughout the year. For their fall 2016 festival, RocketFuel exchanged a sponsorhip for the opportunity to created a series of leave-behinds in the form of postcards. To match the theme of "Film for All," the theme of the postcards was to choose from a long lineage of film history.
+Indie Memphis is a local organization that hosts a several independent film festivals throughout the year. For their fall 2016 festival, RocketFuel exchanged a sponsorship for the opportunity to created a series of leave-behinds in the form of postcards. To match the theme of "Film for All," the theme of the postcards was to choose from a long lineage of film history.
 
 ## A Shoutout to Film History
 
@@ -30,6 +30,6 @@ My postcard combined traditionally inked illustrations on bristol board that wer
 
 ## Working Within a Series
 
-Saturated colors were chosen as a refernece to the time period and inspiration images, but also to make sure they worked as a set with the other postcards being illustrated. In adition to sharing a bold, blueish color scheme, the series also shares a theme of anxiety – anxiety of emptyness, anxiety of the unknown, and anxiety of being misunderstood.
+Saturated colors were chosen as a reference to the time period and inspiration images, but also to make sure they worked as a set with the other postcards being illustrated. In addition to sharing a bold, blueish color scheme, the series also shares a theme of anxiety – anxiety of emptyness, anxiety of the unknown, and anxiety of being misunderstood.
 
 ![postcard series](/assets/images/portfolio/indie-memphis-postcards/postcard-series.png){:class="full"}
