@@ -32,6 +32,8 @@ social:
     - https://plus.google.com/u/0/112417000136872017947
     - https://github.com/ryanfiller89
 
+# portfolio-layout: gifs
+
 # Build settings
 markdown: kramdown
 
@@ -54,12 +56,12 @@ defaults:
         scope:
             type: "portfolio"
         values:
-            parent: work
+            parent: portfolio
 
 collections:
     portfolio:
         output: true
-        permalink: /:categories/:title/
+        permalink: /portfolio/:title/
 
 sass:
     sass_dir: /assets/_scss

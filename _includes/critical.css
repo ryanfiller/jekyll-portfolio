@@ -1,0 +1,17 @@
+.mobile-tray {
+    display: none;
+}
+
+.header__logo svg, .footer__logo svg {
+    max-width: 100%;
+}
+
+.socials svg {
+    height: 100px;
+    width: auto;
+}
+
+.mobile-nav {
+    max-height: 0;
+    overflow: hidden;
+}

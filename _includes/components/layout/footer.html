@@ -1,0 +1,23 @@
+<footer class="footer">
+    <aside class="footer-pre footer-contact">
+        <header class="footer-contact__header js-expander">
+            Get in Touch
+        </header>
+        <div class="footer-contact__container js-expandee">
+            {% include components/contact-form.html %}
+        </div>
+    </aside>
+    <main class="footer-main">
+        <a href="/" class="footer__logo">
+            {% include svgs/rf.svg %}
+        </a>
+        {% include components/layout/nav.html %}
+    </main>
+    <aside class="footer-post">
+        <div class="copyright">
+            Copyright 2012 - {{ 'now' | date: "%Y" }}
+        </div>
+        {% include components/socials.html %}
+    </aside>
+    {% include js-includes.html %}
+</footer>

@@ -1,10 +1,10 @@
-$primary-color: #3f7cac;
-$secondary-color: #f89c7d;
-$white: #fcfaf6;
-$black: #1e2223;
-$gray: lighten($black, 10%);
-$light-gray: lighten($gray, 25%);
-$dark-gray: darken($gray, 10%);
+$color-blue: #3f7cac;
+$color-orange: #f89c7d;
+$color-white: #fcfaf6;
+$color-black: #1e2223;
+$color-gray: lighten($color-black, 10%);
+$color-light-gray: lighten($color-gray, 25%);
+$color-dark-gray: darken($color-gray, 5%);
 
 $shadow:
     2px 0px 5px rgba(0, 255, 255, 0.25),
@@ -16,17 +16,21 @@ $shadow-inset:
     inset 0px 2px 10px rgba(255, 0, 0, 0.30),
     inset 2px 0px 10px rgba(255, 0, 0, 0.30);
 
+
+@mixin pixels {
+    background-image: url('/assets/images/site-assets/screendoor.png');
+    background-position: center center;
+}
+
 @mixin image-overlay {
     position: relative;
-    &::before {
+    &:before {
         content: '';
         display: block;
-        background-color: transparentize($dark-gray, .75);
-        background-image: url('/assets/images/site-assets/screendoor.png');
+        background-color: transparentize($color-dark-gray, .25);
         opacity: .5;
         position: absolute;
         top: 0; right: 0; bottom: 0; left: 0;
         z-index: 1;
-        background-position: center center;
     }
 }

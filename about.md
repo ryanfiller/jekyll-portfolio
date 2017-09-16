@@ -2,16 +2,17 @@
 layout: page
 title: About
 permalink: /about/
-navigation_weight: 1
+navigation_weight: 3
 banner: /assets/images/site-assets/placeholder.png
 ---
 
-<p>
-This is the base Jekyll theme.  You can find out more info <a href="#">Really really long link.</a> about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+![headshot](/assets/images/site-assets/placeholder-thumb.jpg){:class="left"}
+I'm a designer, developer, and illustrator living and working in Memphis, Tennessee.
 
-You can find the source code for the Jekyll new theme at:
-[minima](https://github.com/jekyll/minima)
+I have experience with print and web design using a wide variety of technologies, and I've recently been growing my front end development skills by learning a variety of coding languages. I have also been drawing my entire life and try to pick up illustration work when I can.
 
-You can find the source code for Jekyll at
-[jekyll](https://github.com/jekyll/jekyll)
-</p>
+I have a passion for clean designs, stylized illustrations, and an innovative but accessible internet. I do my best to let that show through everything I do.
+
+Outside of working I enjoy watching old movies, reading books and comics, amateur wood working, being terrible at video games, replica prop construction, DIY home automation, keeping tropical fish, and hanging out with my cats and dog.
+
+My full resume can be found [on my LinkedIn page.](https://www.linkedin.com/in/ryanfiller/){:target="_blank"}

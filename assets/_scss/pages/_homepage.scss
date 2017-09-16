@@ -1,175 +1,89 @@
-.site.home {
+body.homepage {
 
     .header {
+        display: none;
+    }
 
-        .header--main {
-            display: none;
-        }
+    .site-wrap, .site {
+        min-height: 100vh;
+    }
+
+    .site {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .page-content {
+        flex: 1;
+        display: flex;
 
         @include tablet-break {
-            .header--main {
+            flex-direction: column;
+        }
 
-                position: absolute;
+        div {
+            flex: 1;
+            position: relative;
+
+            @include tablet-break {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            &:nth-child(1) {background-color:deepskyblue;}
+            &:nth-child(2) {background-color:lime;}
+            &:nth-child(3) {background-color:indigo;}
+
+            a {
+                color: $color-white;
+                text-decoration: none;
+                font-size: 3rem;
+                text-transform: uppercase;
+                @include font-condensed;
+                text-align: center;
+                display: block;
                 width: 100%;
+                position: absolute;
+                bottom: 10rem;
 
-                .navicon--wrap{
-                    .navicon, .navicon::before, .navicon::after {
-                        background: $secondary-color;
-                    }
-
-                    &.open .navicon {
-                        background: none;
-                    }
+                @include tablet-break {
+                    position: initial;
                 }
             }
         }
     }
 
-    .page-content {
-        height: 80vh;
-        width: 100%;
-        background-size: cover;
-        background-position: center;
-        align-items: center;
-        padding: 0;
-        @include grid;
-        padding-left: 0;
-        padding-right: 0;
-        justify-content: center;
-        @include image-overlay;
+    .logo {
+        width: 50vw;
+        position: absolute;
+        z-index: 1;
+        top: 10rem;
+        left: 50%;
+        transform: translateX(-50%);
 
-        @include phone-break {
-            height: 70vh;
-        }
-
-        &::before {
-            z-index: 2;
-        }
-
-        .homepage__logo {
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
+        svg {
             display: block;
-            width: 50vw;
-            height: 50vh;
-            margin: 15vh 25vw;
-            cursor: pointer;
+            width: 100%;
+            height: auto;
 
-            @include phone-break {
-                width: 100vw;
-                margin: 10vh 0;
+            * {
+                fill: $color-white;
             }
 
-            svg, svg path {
-                transition: $transition/2;
-            }
-
-            svg {
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                width: 100%;
-                display: block;
-
-                path.initials {
-                    display: none;
-                }
-
-                &:nth-child(1) {
-                    z-index: 5;
-                    opacity: 0;
-                }
-
-                &:nth-child(2) {
-                    z-index: 4;
-
-                    path.logo, tspan {
-                        fill: $secondary-color;
-                    }
-
-                    tspan {
-                        fill: $white;
-                    }
-                }
-
-                &:nth-child(3) {
-                    z-index: 3;
-                    path.logo, tspan {
-                        fill: cyan;
-                    }
-                }
-
-                &:nth-child(4) {
-                    z-index: 2;
-                    path.logo, tspan {
-                        fill: red;
-                    }
-                }
-            }
-
-            &:hover {
-                svg {
-                    &:nth-child(1) {
-                        opacity: 0.125;
-                    }
-
-                    &:nth-child(2) {
-
-                        path.logo, tspan {
-                            fill: $white;
-                        }
-                    }
-
-                    &:nth-child(3) {
-                        right: -1px;
-                        filter: blur(2px);
-                    }
-
-                    &:nth-child(4) {
-                        left: -1px;
-                        filter: blur(2px);
-                    }
-                }
-            }
-
-            @include phone-break {
-                svg {
-                    path.logo, text.tagline {
-                        display: none;
-                    }
-
-                    path.initials {
-                        display: block;
-                        fill: $white;
-                    }
-                }
+            @include tablet-break {
+                height: auto;
+                width: 50%;
+                margin: 0 auto;
             }
         }
 
-        .swiper-wrapper {
-            .swiper-slide {
-                background-size: cover;
-                background-position: center center;
-            }
-        }
-
-        .swiper-pagination {
-            position: absolute;
-            bottom: $spacing/2;
-
-            .swiper-pagination-bullet {
-                height: $spacing/2;
-                width: $spacing/2;
-                border-radius: $spacing/4;
-                background-color: $secondary-color;
-
-                &-active {
-                    background-color: $primary-color;
-                }
-            }
+        @include tablet-break {
+            transform: none;
+            position: initial;
+            width: 100%;
+            padding: 2rem;
+            background-color: $color-black;
         }
     }
 }

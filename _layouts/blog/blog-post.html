@@ -1,0 +1,38 @@
+{% include head.html %}
+
+<body class="{{ page.layout | replace: '/', '-' }}">
+
+	<div class="site-wrap">
+
+		{% include components/layout/mobile-nav.html %}
+
+		<div class="site">
+
+	        {% include components/layout/header.html %}
+
+	        <div class="overlap">
+	        {% include components/banner.html %}
+	        </div>
+
+	        <main class="page-content blog-post">
+
+				<p class="blog-post__excerpt">
+					{{ page.description }}
+				</p>
+
+	            {% include components/meta.html%}
+
+				<div class="blog-post__content">
+	            	{{ content }}
+				</div>
+
+	            <a class="back__link" href="/blog"> Back to all posts</a>
+
+				<cite class="thumbnail-credit">Thumbnail gif credit: {{ page.gif-attribution }}</cite>
+	        </main>
+
+	        {% include components/layout/footer.html %}
+	    </div>
+	</div>
+
+</body>

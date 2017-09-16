@@ -1,0 +1,64 @@
+{% include head.html %}
+
+<body class="{{ page.layout | replace: '/', '-' }}">
+
+	<div class="site-wrap">
+
+		{% include components/layout/mobile-nav.html %}
+
+		<div class="site">
+
+	        {% include components/layout/header.html %}
+
+	        {% include components/banner.html %}
+
+	        <main class="page-content blog-list">
+	            {% for post in paginator.posts %}
+	                <article class="excerpt__block-link">
+	                    <a href="{{ post.url }}" class="excerpt">
+	                        <div class="excerpt__header" style="background-image:url({{ post.thumbnail }});">
+	                            {% include components/meta.html%}
+	                			<h2 class="excerpt__title">{{ post.title }}</h2>
+	                		</div>
+	                        <main class="excerpt__body">
+	                			<p class="excerpt__text">
+									{{ post.description }}
+								</p>
+	                			<span class="excerpt__link">Read More</span>
+	                		</main>
+	                    </a>
+						{% if site.portfolio-layout == "gifs" %}
+					        <video loop="loop" class="video">
+					            <source src="{{ image-root}}{{ work.gif-video }}.mp4" type="video/mp4">
+					            <source src="{{ image-root}}{{ work.gif-video }}.ogg" type="video/ogg">
+					        </video>
+					    {% endif %}
+	                </article>
+	            {% endfor %}
+
+				{% if paginator.total_pages > 1 %}
+					<div class="blog-pagination">
+						<div class="blog-pagination__prev">
+							{% if paginator.previous_page %}
+								<a href="{{ paginator.previous_page_path }}">Previous</a>
+							{% endif %}
+						</div>
+
+						<span class="blog-pagination__current">{{ paginator.page }}</span>
+
+						<div class="blog-pagination__next">
+							{% if paginator.next_page %}
+								<a href="{{ paginator.next_page_path }}">Next</a>
+							{% endif %}
+						</div>
+					</div>
+				{% endif %}
+
+	        </main>
+
+	        {% include components/layout/footer.html %}
+
+	    </div>
+	</div>
+
+</body>

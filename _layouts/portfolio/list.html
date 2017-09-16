@@ -1,0 +1,31 @@
+{% include head.html %}
+
+<body class="{{ page.layout | replace: '/', '-' }}">
+
+	<div class="site-wrap">
+
+		{% include components/layout/mobile-nav.html %}
+
+		<div class="site">
+
+	        {% include components/layout/header.html %}
+
+	        {% include components/banner.html %}
+
+			{% include components/layout/subnav.html %}
+
+	        <main class="page-content">
+
+	            <div class="portfolio-grid">
+					{% for work in site.portfolio %}
+	                    {% include components/portfolio-block.html %}
+	                {% endfor %}
+	            </div>
+	        </main>
+
+	        {% include components/layout/footer.html %}
+
+	    </div>
+	</div>
+
+</body>

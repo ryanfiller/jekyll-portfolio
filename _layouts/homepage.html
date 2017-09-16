@@ -1,0 +1,34 @@
+{% assign tags =  site.portfolio | map: 'tags' | join: ','  | split: ',' | uniq %}
+
+{% include head.html %}
+
+<body class="{{ page.layout | replace: '/', '-' }}">
+
+	<div class="site-wrap">
+
+		{% include components/layout/mobile-nav.html %}
+
+		<div class="site">
+			{% include components/layout/header.html %}
+
+			<a href="/" class="logo">
+		        {% include svgs/logo.svg %}
+		    </a>
+
+			<section class="page-content">
+
+				{% for tag in tags %}
+					<div class="">
+						<a href="/{{ tag }}">
+							{{ tag }}
+						</a>
+					</div>
+				{% endfor %}
+
+			</section>
+
+			{% include components/layout/footer.html %}
+		</div>
+	</div>
+
+</body>

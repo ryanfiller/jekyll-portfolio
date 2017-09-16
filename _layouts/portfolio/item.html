@@ -1,0 +1,37 @@
+{% include head.html %}
+
+<body class="{{ page.layout | replace: '/', '-' }}">
+
+	<div class="site-wrap">
+
+		{% include components/layout/mobile-nav.html %}
+
+		<div class="site">
+
+			{% include components/layout/header.html %}
+
+			<main class="page-content">
+
+				{% include components/portfolio-swiper.html %}
+
+				<article class="portfolio-text">
+					<header>
+						<h1 class="portfolio-header">{{ page.title }}</h1>
+
+						{% include components/meta.html %}
+					</header>
+
+				    {{ content }}
+
+					<a class="back-link" href="/{{ page.parent }}"> Back to {{ page.parent }}</a>
+
+				</article>
+
+			</main>
+
+			{% include components/layout/footer.html %}
+
+		</div>
+	</div>
+
+</body>

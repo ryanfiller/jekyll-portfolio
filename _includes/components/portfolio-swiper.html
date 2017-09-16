@@ -1,0 +1,26 @@
+<section class="portfolio-swiper {% if page.slides.size > 1 %}swiper-container{% endif %}" style="background-color:#{{ page.brand-color }};">
+	<div class="swiper-wrapper">
+			{% for slide in page.slides %}
+
+				{% assign image =  slide | remove: ' ' | split: ',' %}
+
+				{% capture image-root %}/assets/images/portfolio/{{ page.title | downcase | replace: ' ', '-'}}/{% endcapture %}
+
+				<picture class="swiper-slide">
+					<div class="fallback" style="background-image: url('{{ image-root }}{{ image[1] }}');"></div>
+					<source media="(max-width: 499px)" srcset="{{ image-root }}{{ image[3] }}">
+					<source media="(max-width: 1349px)" srcset="{{ image-root }}{{ image[2] }}">
+					<img src="{{ image-root }}{{ image[1] }}" alt="{{ image[0] }}">
+				</picture>
+
+			{% endfor %}
+	</div>
+	{% if page.slides.size > 1 %}
+		<div class="swiper-pagination">
+		</div>
+		<div class="swiper-button-container">
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+		</div>
+	{% endif %}
+</section>
