@@ -13,9 +13,8 @@ gif-video: gif-video
 thumbnail: thumbnail-500x500-3.jpg
 brand-color: E86724
 slides:
-    - alt, slider-shirt.png, slider-shirt.png, slider-shirt.png
-    - alt, slider-design.jpg, slider-design.jpg, slider-design.jpg
-    - alt, slider-design-2.jpg, slider-design-2.jpg, slider-design-2.jpg
+    - Shirt Mockup, slider-shirt.png, slider-shirt.png, slider-shirt.png
+    - Flat Design, slider-design.jpg, slider-design.jpg, slider-design.jpg
 ---
 
 ![color options](/assets/images/portfolio/hack-memphis-2016/logo.png){:class="right small"}
